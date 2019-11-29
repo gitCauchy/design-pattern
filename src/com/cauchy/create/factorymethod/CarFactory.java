@@ -1,7 +1,16 @@
 package com.cauchy.create.factorymethod;
 
-public class CarFactory {
-	public Car createCar() {
+/**
+ * 
+ * @author Cauchy
+ * @ClassName CarFactory.java
+ * @Date 2019年11月29日
+ * @Description 汽车工厂类
+ * @Version 
+ *
+ */
+public class CarFactory implements Factory{
+	public Car create() {
 		return new Car();
 	}
 }
