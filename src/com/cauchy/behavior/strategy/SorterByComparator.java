@@ -1,6 +1,14 @@
 package com.cauchy.behavior.strategy;
-
-public class Sorter02<T> {
+/**
+ * 
+ * @author Cauchy
+ * @ClassName SorterByComparator.java
+ * @Date 2019年11月30日
+ * @Description 通过比较器来比较
+ * @Version 
+ *
+ */
+public class SorterByComparator<T> {
 	public void sort(T[] arr, Comparator<T> comparator) {
 		for (int i = 0; i < arr.length - 1; i++) {
 			int minPos = i;

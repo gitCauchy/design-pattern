@@ -1,6 +1,15 @@
 package com.cauchy.behavior.strategy;
 
-public class Dog implements Comparable<Dog>{
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Dog.java
+ * @Date 2019年11月30日
+ * @Description TODO
+ * @Version Compareable举例
+ *
+ */
+public class Dog implements Comparable<Dog> {
 	private int weight;
 
 	public Dog(int weight) {
@@ -15,9 +24,9 @@ public class Dog implements Comparable<Dog>{
 	public int compareTo(Dog t) {
 		if (this.weight > t.weight) {
 			return 1;
-		}else if(this.weight < t.weight) {
+		} else if (this.weight < t.weight) {
 			return -1;
-		}else {
+		} else {
 			return 0;
 		}
 	}

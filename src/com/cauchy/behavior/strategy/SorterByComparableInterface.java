@@ -1,6 +1,14 @@
 package com.cauchy.behavior.strategy;
-
-public class Sorter {
+/**
+ * 
+ * @author Cauchy
+ * @ClassName SorterByComparableInterface.java
+ * @Date 2019年11月30日
+ * @Description 通过Comparable接口比较两个对象大小
+ * @Version 
+ *
+ */
+public class SorterByComparableInterface {
 	public static void sort(Comparable[] arr) {
 		for(int i = 0; i < arr.length - 1; i ++) {
 			int minPos = i;
