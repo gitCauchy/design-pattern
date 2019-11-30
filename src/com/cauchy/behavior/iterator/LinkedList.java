@@ -1,5 +1,13 @@
-package com.cauchy.behavior.iterator.v3;
-
+package com.cauchy.behavior.iterator;
+/**
+ * 
+ * @author Cauchy
+ * @ClassName LinkedList.java
+ * @Date 2019年11月30日
+ * @Description TODO
+ * @Version 链表，逻辑上相邻的元素，在物理上并不相邻，删除和插入速度更快。
+ *
+ */
 public class LinkedList<E> implements Collection<E>{
 	Node head = null;
 	Node tail = null;
@@ -49,5 +57,16 @@ public class LinkedList<E> implements Collection<E>{
 			return o;
 		}
 		
+	}
+	public static void main(String[] args) {
+		Collection list = new LinkedList();
+		for(int i = 0 ; i < 15; i ++) {
+			list.add(new String("s" + i));
+		}
+		Iterator it = list.iterator();
+		while(it.hasNext()) {
+			Object o = it.next();
+			System.out.println(o);
+		}
 	}
 }
