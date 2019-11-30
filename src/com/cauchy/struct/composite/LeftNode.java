@@ -1,5 +1,13 @@
 package com.cauchy.struct.composite;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName LeftNode.java
+ * @Date 2019年11月30日
+ * @Description 叶子节点
+ * @Version 
+ *
+ */
 public class LeftNode extends Node {
 	String content;
 	
@@ -8,7 +16,7 @@ public class LeftNode extends Node {
 		this.content = content;
 	}
 
-	public void p() {
+	public void printName() {
 		System.out.println(content);
 	}
 

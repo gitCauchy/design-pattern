@@ -2,10 +2,21 @@ package com.cauchy.struct.composite;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName BranchNode.java
+ * @Date 2019年11月30日
+ * @Description 枝节点
+ * @Version 
+ *
+ */
 public class BranchNode extends Node{
+	
 	String name;
+	
 	List<Node> nodes = new ArrayList<Node>();
+	
 	public BranchNode(String name) {
 		super();
 		this.name = name;
@@ -15,7 +26,7 @@ public class BranchNode extends Node{
 		nodes.add(node);
 	}
 	
-	public void p() {
+	public void printName() {
 		System.out.println(name);
 	}
 

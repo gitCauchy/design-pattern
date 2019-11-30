@@ -19,11 +19,16 @@ public class Main {
 		b21.add(c212);
 		tree(root,0);
 	}
+	/**
+	 * µÝ¹é´òÓ¡Ê÷
+	 * @param b
+	 * @param depth
+	 */
 	static void tree(Node b,int depth) {
 		for(int i = 0 ;i < depth; i ++) {
 			System.out.print("--");
 		}
-		b.p();
+		b.printName();
 		if(b instanceof BranchNode) {
 			for(Node n : ((BranchNode)b).nodes) {
 				tree(n,depth + 1);
