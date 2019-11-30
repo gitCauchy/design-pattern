@@ -1,5 +1,14 @@
 package com.cauchy.struct.decorator;
 
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Decorator.java
+ * @Date 2019年11月30日
+ * @Description 装饰器接口
+ * @Version
+ *
+ */
 public abstract class Decorator implements Apple {
 
 	protected Apple apple;
