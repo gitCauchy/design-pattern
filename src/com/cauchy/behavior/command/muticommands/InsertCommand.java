@@ -1,4 +1,4 @@
-package com.cauchy.behavior.command;
+package com.cauchy.behavior.command.muticommands;
 /**
  * 
  * @author Cauchy

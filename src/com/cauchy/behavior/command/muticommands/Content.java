@@ -1,4 +1,4 @@
-package com.cauchy.behavior.command;
+package com.cauchy.behavior.command.muticommands;
 
 /**
  * 
@@ -17,25 +17,19 @@ public class Content {
 		this.msg = msg;
 	}
 	
-	
-	@Override
 	public String toString() {
 		return "Content [msg=" + msg + "]";
 	}
 
-
 	public static void main(String[] args) {
 		Content c = new Content("hello");
 		String strToInsert = "word";
-		InsertCommand insert = new InsertCommand(c, strToInsert);
-		insert.doit();
+		CommandChain cc = new CommandChain();
+		cc.add(new InsertCommand(c, strToInsert));
+		cc.add(new DeleteCommand(c));
+		cc.doit();
 		System.out.println(c);
-		insert.undo();
-		System.out.println(c);
-		DeleteCommand delete = new DeleteCommand(c);
-		delete.doit();
-		System.out.println(c);
-		delete.undo();
+		cc.undo();
 		System.out.println(c);
 	}
 }
