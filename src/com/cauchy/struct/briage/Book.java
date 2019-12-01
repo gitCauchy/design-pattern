@@ -1,5 +1,13 @@
 package com.cauchy.struct.briage;
-
-public class Book extends Gift {
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Book.java
+ * @Date 2019年12月1日
+ * @Description 书本类
+ * @Version 
+ *
+ */
+public class Book extends GiftImpl {
 
 }

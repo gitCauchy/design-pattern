@@ -1,5 +1,5 @@
 package com.cauchy.struct.briage;
 
-public class CodeGift {
+public class GiftImpl {
 
 }
