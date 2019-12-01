@@ -1,8 +1,16 @@
-package com.cauchy.struct.proxy.v6;
+package com.cauchy.struct.proxy.dynamicproxy;
 
 import java.lang.reflect.Proxy;
 import java.util.Random;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Tank.java
+ * @Date 2019年12月1日
+ * @Description 具体需要被代理的对象
+ * @Version 
+ *
+ */
 public class Tank implements Movable {
 
 	public void move() {

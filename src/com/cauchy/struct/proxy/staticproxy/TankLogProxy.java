@@ -1,5 +1,13 @@
-package com.cauchy.struct.proxy.v5;
-
+package com.cauchy.struct.proxy.staticproxy;
+/**
+ * 
+ * @author Cauchy
+ * @ClassName TankLogProxy.java
+ * @Date 2019年12月1日
+ * @Description TODO
+ * @Version 日志代理
+ *
+ */
 public class TankLogProxy implements Movable{
 	Movable m;
 	

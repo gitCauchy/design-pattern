@@ -1,22 +1,28 @@
-package com.cauchy.struct.proxy.v2;
+package com.cauchy.struct.proxy.staticproxy;
 
 import java.util.Random;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Tank.java
+ * @Date 2019年12月1日
+ * @Description 坦克实现类
+ * @Version 
+ *
+ */
 public class Tank implements Movable {
 
 	public void move() {
-		long start = System.currentTimeMillis();
 		System.out.println("Tank moving.....");
 		try {
 			Thread.sleep(new Random().nextInt(1000));
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
 	}
+	
 	public static void main(String[] args) {
-		new Tank().move();
+		new TankLogProxy(new TankTimeProxy(new Tank())).move();
 	}
 
 }
