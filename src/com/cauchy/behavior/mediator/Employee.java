@@ -1,7 +1,16 @@
 package com.cauchy.behavior.mediator;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName Employee.java
+ * @Date 2019年12月1日
+ * @Description 中介模式-员工 通讯有Manager传递
+ * @Version 
+ *
+ */
 public class Employee {
 	String name;
+	
 	private Mediator mediator;
 
 	public Employee(Mediator mediator, String name) {
