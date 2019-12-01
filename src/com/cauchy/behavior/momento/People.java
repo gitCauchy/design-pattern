@@ -1,7 +1,21 @@
 package com.cauchy.behavior.momento;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName People.java
+ * @Date 2019年12月1日
+ * @Description 备忘录模式，将对象变化的状态保存起来
+ * @Version 
+ *
+ */
 public class People {
+	/*
+	 * 姓名
+	 */
 	private String name;
+	/*
+	 * 年龄
+	 */
 	private int age;
 	
 	public PeopleMemento saveMemento() {
@@ -37,5 +51,24 @@ public class People {
 
 	public String toString() {
 		return "People [name=" + name + ", age=" + age + "]";
+	}
+	
+	public static void main(String[] args) {
+		People people = new People("cauchy", 25);
+		CreateTaker ct = new CreateTaker();
+		PeopleMemento pm = people.saveMemento();
+		ct.add("s1", pm);
+		people.setAge(28);
+		people.setName("Tom");
+		pm = people.saveMemento();
+		ct.add("s2", pm);
+		people.setAge(26);
+		people.setName("Lucy");
+		System.out.println(people);
+		people.recovery(ct.get("s1"));;
+		System.out.println(people);
+		people.recovery(ct.get("s2"));;
+		System.out.println(people);
+		
 	}
 }

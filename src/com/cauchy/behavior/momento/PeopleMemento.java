@@ -1,5 +1,13 @@
 package com.cauchy.behavior.momento;
-
+/**
+ * 
+ * @author Cauchy
+ * @ClassName PeopleMemento.java
+ * @Date 2019年12月1日
+ * @Description 保存对象的状态
+ * @Version 
+ *
+ */
 public class PeopleMemento {
 	private String name;
 	private int age;
@@ -19,6 +27,4 @@ public class PeopleMemento {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	
 }
