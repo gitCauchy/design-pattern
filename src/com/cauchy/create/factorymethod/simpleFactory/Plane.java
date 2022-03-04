@@ -1,15 +1,15 @@
 package com.cauchy.create.factorymethod.simpleFactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Plane.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ²úÆ· - ·É»ú
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº§å“ - é£æœº
+ * @Version
  */
 public class Plane implements Product {
-	public void go() {
-		System.out.println("plane go");
-	}
+    @Override
+    public void go() {
+        System.out.println("plane go");
+    }
 }

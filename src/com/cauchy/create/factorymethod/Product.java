@@ -1,14 +1,12 @@
 package com.cauchy.create.factorymethod;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Product.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ²úÆ·½Ó¿Ú
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº§å“æ¥å£
+ * @Version
  */
 public interface Product {
-	void go();
+    void go();
 }

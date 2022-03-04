@@ -1,28 +1,26 @@
 package com.cauchy.create.factorymethod.simpleFactory;
 
 /**
- * 
  * @author Cauchy
  * @ClassName SimpleFactory.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¼òµ¥¹¤³§£¬¹¤³§¼¸ÖÖÁËËùÓĞÊµÀıµÄ´´½¨µÄÂß¼­£¬Ò»µ©¹¤³§²»ÄÜ¹¤×÷£¬Õû¸öÏµÍ³¶¼»áÊÜµ½Ó°Ïì
- * 				Ôö¼ÓĞÂ²úÆ·£¬¹¤³§ĞèÒª×öĞŞ¸Ä¡£
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description ç®€å•å·¥å‚ï¼Œå·¥å‚å‡ ç§äº†æ‰€æœ‰å®ä¾‹çš„åˆ›å»ºçš„é€»è¾‘ï¼Œä¸€æ—¦å·¥å‚ä¸èƒ½å·¥ä½œï¼Œæ•´ä¸ªç³»ç»Ÿéƒ½ä¼šå—åˆ°å½±å“
+ * å¢åŠ æ–°äº§å“ï¼Œå·¥å‚éœ€è¦åšä¿®æ”¹ã€‚
  * @Version
- *
  */
 public class SimpleFactory {
-	public static Product getProduct(String productName) {
-		Product product = null;
-		switch (productName) {
-		case "car":
-			product = new Car();
-			break;
-		case "plane":
-			product = new Plane();
-			break;
-		default:
-			break;
-		}
-		return product;
-	}
+    public static Product getProduct(String productName) {
+        Product product = null;
+        switch (productName) {
+            case "car":
+                product = new Car();
+                break;
+            case "plane":
+                product = new Plane();
+                break;
+            default:
+                break;
+        }
+        return product;
+    }
 }

@@ -1,31 +1,29 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton05.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÎªÁË½â¾öSingleton04.javaµÄÎÊÌâ£¬²ÉÓÃË«ÖØÅĞ¶ÏµÄ·½Ê½½â¾öÎÊÌâ¡£
- * 				µÚÒ»²ãif´úÂë¿éµÄÒâÒåÔÚÓÚ£¬Èç¹ûµÚÒ»²ãÅĞ¶ÏINSTANCE²»Îª¿Õ£¬Ôò³Ì
- * 				²»ĞèÒªÏòÏÂÖ´ĞĞ£¬½ÚÔ¼×ÊÔ´¡£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description ä¸ºäº†è§£å†³Singleton04.javaçš„é—®é¢˜ï¼Œé‡‡ç”¨åŒé‡åˆ¤æ–­çš„æ–¹å¼è§£å†³é—®é¢˜ã€‚
+ * ç¬¬ä¸€å±‚ifä»£ç å—çš„æ„ä¹‰åœ¨äºï¼Œå¦‚æœç¬¬ä¸€å±‚åˆ¤æ–­INSTANCEä¸ä¸ºç©ºï¼Œåˆ™ç¨‹
+ * ä¸éœ€è¦å‘ä¸‹æ‰§è¡Œï¼ŒèŠ‚çº¦èµ„æºã€‚
+ * @Version
  */
 public class Singleton05 {
-	private static Singleton05 INSTANCE;
+    private static Singleton05 INSTANCE;
 
-	private Singleton05() {
-	}
+    private Singleton05() {
+    }
 
-	public static Singleton05 getInstance() {
-		if (INSTANCE == null) {
-			// Ë«ÖØÅĞ¶Ï
-			synchronized (Singleton05.class) {
-				if (INSTANCE == null) {
-					INSTANCE = new Singleton05();
-				}
-			}
-		}
-		return INSTANCE;
-	}
+    public static Singleton05 getInstance() {
+        if (INSTANCE == null) {
+            // åŒé‡åˆ¤æ–­
+            synchronized (Singleton05.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = new Singleton05();
+                }
+            }
+        }
+        return INSTANCE;
+    }
 }

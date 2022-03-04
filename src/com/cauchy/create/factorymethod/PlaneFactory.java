@@ -1,16 +1,15 @@
 package com.cauchy.create.factorymethod;
+
 /**
- * 
  * @author Cauchy
  * @ClassName PlaneFactory.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ·É»ú¹¤³§Àà
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description é£žæœºå·¥åŽ‚ç±»
+ * @Version
  */
 public class PlaneFactory implements Factory {
-
-	public Plane create() {
-		return new Plane();
-	}
+    @Override
+    public Plane create() {
+        return new Plane();
+    }
 }

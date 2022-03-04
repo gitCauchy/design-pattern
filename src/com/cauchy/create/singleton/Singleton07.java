@@ -1,17 +1,16 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton07.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description TODO
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æžšä¸¾ç±»å®žçŽ°
+ * @Version
  */
 public enum Singleton07 {
-	INSTANCE;
-	public Singleton07 getInstance() {
-		return INSTANCE;
-	}
+    INSTANCE;
+
+    public Singleton07 getInstance() {
+        return INSTANCE;
+    }
 }

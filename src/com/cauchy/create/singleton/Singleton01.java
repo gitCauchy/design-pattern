@@ -1,24 +1,22 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton01.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¶öººÊ½£¬ÊµÏÖ·½Ê½ÊÇ³£Á¿³ÉÔ±±äÁ¿£¬Î¨Ò»È±ÏİÊÇÎŞÂÛÊÇ·ñĞèÒª µ÷ÓÃ»ñÈ¡¶ÔÏó·½·¨£¬¶¼»á´´½¨ÊµÀı¡£
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description é¥¿æ±‰å¼ï¼Œå®ç°æ–¹å¼æ˜¯å¸¸é‡æˆå‘˜å˜é‡ï¼Œå”¯ä¸€ç¼ºé™·æ˜¯æ— è®ºæ˜¯å¦éœ€è¦ è°ƒç”¨è·å–å¯¹è±¡æ–¹æ³•ï¼Œéƒ½ä¼šåˆ›å»ºå®ä¾‹ã€‚
  * @Version
- *
  */
 public class Singleton01 {
-	// ´´½¨ÊµÀı
-	private static final Singleton01 INSTANCE = new Singleton01();
+    // åˆ›å»ºå®ä¾‹
+    private static final Singleton01 INSTANCE = new Singleton01();
 
-	// Ìá¹©get·½·¨
-	public static Singleton01 getInstance() {
-		return INSTANCE;
-	}
+    // æä¾›getæ–¹æ³•
+    public static Singleton01 getInstance() {
+        return INSTANCE;
+    }
 
-	// ½«¹¹Ôì·½·¨ÉèÖÃÎªprivate
-	private Singleton01() {
-	}
+    // å°†æ„é€ æ–¹æ³•è®¾ç½®ä¸ºprivate
+    private Singleton01() {
+    }
 }

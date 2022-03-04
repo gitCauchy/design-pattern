@@ -1,25 +1,23 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton03.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¸Ä½øµÄÀÁººÊ½£¬Í¨¹ıÔÚget·½·¨ÉÏÌí¼Ósynchronized¹Ø¼ü×ÖÀ´ÊµÏÖ¼ÓËø½â¾ö ¶àÏß³ÌÎÊÌâ£¬
- * 				Í¬Ê±´øÀ´ÁË³ÌĞòµÄĞ§ÂÊÎÊÌâ¡£
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ”¹è¿›çš„æ‡’æ±‰å¼ï¼Œé€šè¿‡åœ¨getæ–¹æ³•ä¸Šæ·»åŠ synchronizedå…³é”®å­—æ¥å®ç°åŠ é”è§£å†³ å¤šçº¿ç¨‹é—®é¢˜ï¼Œ
+ * åŒæ—¶å¸¦æ¥äº†ç¨‹åºçš„æ•ˆç‡é—®é¢˜ã€‚
  * @Version
- *
  */
 public class Singleton03 {
-	private static Singleton03 INSTANCE;
+    private static Singleton03 INSTANCE;
 
-	private Singleton03() {
-	}
+    private Singleton03() {
+    }
 
-	public static synchronized Singleton03 getInstance() {
-		if (INSTANCE == null) {
-			INSTANCE = new Singleton03();
-		}
-		return INSTANCE;
-	}
+    public static synchronized Singleton03 getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new Singleton03();
+        }
+        return INSTANCE;
+    }
 }

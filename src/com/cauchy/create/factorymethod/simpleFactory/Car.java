@@ -1,16 +1,15 @@
 package com.cauchy.create.factorymethod.simpleFactory;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Car.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ²úÆ· - Æû³µ
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº§å“ - æ±½è½¦
+ * @Version
  */
-public class Car implements Product{
-	public void go() {
-		System.out.println("car go");
-	}
+public class Car implements Product {
+    @Override
+    public void go() {
+        System.out.println("car go");
+    }
 }

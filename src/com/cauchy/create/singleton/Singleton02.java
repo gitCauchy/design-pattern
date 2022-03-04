@@ -1,27 +1,25 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton02.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÀÁººÊ½£¬½â¾öÁË¶öººÊ½²úÉúµÄÎÊÌâ£¬µ«ÊÇ´øÀ´ÁËÏß³Ì²»°²È«µÄÎÊÌâ
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ‡’æ±‰å¼ï¼Œè§£å†³äº†é¥¿æ±‰å¼äº§ç”Ÿçš„é—®é¢˜ï¼Œä½†æ˜¯å¸¦æ¥äº†çº¿ç¨‹ä¸å®‰å…¨çš„é—®é¢˜
  * @Version
- *
  */
 public class Singleton02 {
-	// ´´½¨¾²Ì¬±äÁ¿£¬ÔÚget·½·¨µ÷ÓÃÊ±²Å³õÊ¼»¯¶ÔÏó
-	private static Singleton02 INSTANCE;
+    // åˆ›å»ºé™æ€å˜é‡ï¼Œåœ¨getæ–¹æ³•è°ƒç”¨æ—¶æ‰åˆå§‹åŒ–å¯¹è±¡
+    private static Singleton02 INSTANCE;
 
-	// ½«¹¹Ôì·½·¨µÄ·ÃÎÊÈ¨ÏŞÉèÖÃÎªprivate
-	private Singleton02() {
-	}
+    // å°†æ„é€ æ–¹æ³•çš„è®¿é—®æƒé™è®¾ç½®ä¸ºprivate
+    private Singleton02() {
+    }
 
-	// »ñÈ¡ÊµÀıµÄget·½·¨
-	public static Singleton02 getInstance() {
-		if (INSTANCE == null) {
-			INSTANCE = new Singleton02();
-		}
-		return INSTANCE;
-	}
+    // è·å–å®ä¾‹çš„getæ–¹æ³•
+    public static Singleton02 getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new Singleton02();
+        }
+        return INSTANCE;
+    }
 }

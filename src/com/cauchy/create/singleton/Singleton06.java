@@ -1,25 +1,23 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton06.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÀÁººÊ½ÄÚ²¿ÀàµÄÊµÏÖ·½Ê½£¬¼ÓÔØSingleton06Ê±£¬²¢²»¼ÓÔØÄÚ²¿Àà£¬½â¾öÁË×ÊÔ´ÏûºÄµÄÎÊÌâ
- * 				µ÷ÓÃget·½·¨Ê±£¬¼ÓÔØÄÚ²¿Àà£¬´´½¨ÊµÀı¡£Ïß³Ì°²È«ÎÊÌâÓÉJvmÀ´¸ºÔğ£¬±£Ö¤ÄÚ´æÖĞÖ»ÓĞÒ»¸ö
- * 				Singleton06Holder¶ÔÏó¡£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ‡’æ±‰å¼å†…éƒ¨ç±»çš„å®ç°æ–¹å¼ï¼ŒåŠ è½½Singleton06æ—¶ï¼Œå¹¶ä¸åŠ è½½å†…éƒ¨ç±»ï¼Œè§£å†³äº†èµ„æºæ¶ˆè€—çš„é—®é¢˜
+ * è°ƒç”¨getæ–¹æ³•æ—¶ï¼ŒåŠ è½½å†…éƒ¨ç±»ï¼Œåˆ›å»ºå®ä¾‹ã€‚çº¿ç¨‹å®‰å…¨é—®é¢˜ç”±Jvmæ¥è´Ÿè´£ï¼Œä¿è¯å†…å­˜ä¸­åªæœ‰ä¸€ä¸ª
+ * Singleton06Holderå¯¹è±¡ã€‚
+ * @Version
  */
 public class Singleton06 {
-	private Singleton06() {
-	}
+    private Singleton06() {
+    }
 
-	private static class Singleton06Holder {
-		private final static Singleton06 INSTANCE = new Singleton06();
-	}
+    private static class Singleton06Holder {
+        private final static Singleton06 INSTANCE = new Singleton06();
+    }
 
-	public static Singleton06 getInstance() {
-		return Singleton06Holder.INSTANCE;
-	}
+    public static Singleton06 getInstance() {
+        return Singleton06Holder.INSTANCE;
+    }
 }

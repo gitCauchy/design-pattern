@@ -1,30 +1,28 @@
 package com.cauchy.create.singleton;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Singleton04.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¸Ä½øµÄÀÁººÊ½£¬Í¨¹ı¼õĞ¡Í¬²½´úÂë¿éµÄ·½Ê½Ìá¸ßĞ§ÂÊ,µ«ÊÇÊµ¼ÊÉÏ²¢Ã»ÓĞ½â¾öÎÊÌâ
- * 				ÀıÈç£¬µ±Ïß³Ìthread1 ½øĞĞµ½labelµÄÎ»ÖÃ£¬Ê±¼äÆ¬ÓÃÍê£¬thread2Ö´ĞĞ½øÈë
- * 				if ×Ó¿éÅĞ¶ÏINSTANCE == NULL ½øÈëÍ¬²½¿é£¬Íê³ÉÊµÀı´´½¨¡£ÕâÑù¾ÍÔì³ÉÁË
- * 				Ïß³Ì²»°²È«ÎÊÌâ¡£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ”¹è¿›çš„æ‡’æ±‰å¼ï¼Œé€šè¿‡å‡å°åŒæ­¥ä»£ç å—çš„æ–¹å¼æé«˜æ•ˆç‡,ä½†æ˜¯å®é™…ä¸Šå¹¶æ²¡æœ‰è§£å†³é—®é¢˜
+ * ä¾‹å¦‚ï¼Œå½“çº¿ç¨‹thread1 è¿›è¡Œåˆ°labelçš„ä½ç½®ï¼Œæ—¶é—´ç‰‡ç”¨å®Œï¼Œthread2æ‰§è¡Œè¿›å…¥
+ * if å­å—åˆ¤æ–­INSTANCE == NULL è¿›å…¥åŒæ­¥å—ï¼Œå®Œæˆå®ä¾‹åˆ›å»ºã€‚è¿™æ ·å°±é€ æˆäº†
+ * çº¿ç¨‹ä¸å®‰å…¨é—®é¢˜ã€‚
+ * @Version
  */
 public class Singleton04 {
-	private static Singleton04 INSTANCE;
+    private static Singleton04 INSTANCE;
 
-	private Singleton04() {
-	}
+    private Singleton04() {
+    }
 
-	private static Singleton04 getInstance() {
-		if (INSTANCE == null) {
-			// label
-			synchronized (Singleton04.class) {
-				INSTANCE = new Singleton04();
-			}
-		}
-		return INSTANCE;
-	}
+    private static Singleton04 getInstance() {
+        if (INSTANCE == null) {
+            // label
+            synchronized (Singleton04.class) {
+                INSTANCE = new Singleton04();
+            }
+        }
+        return INSTANCE;
+    }
 }
