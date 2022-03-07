@@ -5,32 +5,32 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 
  * @author Cauchy
  * @ClassName CommandChain.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description TODO
- * @Version ºÍÔğÈÎÁ´½áºÏÊµÏÖÃüÁîÄ£Ê½
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å’Œè´£ä»»é“¾ç»“åˆå®ç°å‘½ä»¤æ¨¡å¼
+ * @Version
  */
 public class CommandChain extends Command {
 
-	List<Command> commands = new ArrayList<Command>();
+    List<Command> commands = new ArrayList<Command>();
 
-	public void add(Command command) {
-		commands.add(command);
-	}
+    public void add(Command command) {
+        commands.add(command);
+    }
 
-	public void doit() {
-		for (Command c : commands) {
-			c.doit();
-		}
-	}
+    @Override
+    public void doit() {
+        for (Command c : commands) {
+            c.doit();
+        }
+    }
 
-	public void undo() {
-		Collections.reverse(commands);
-		for (Command c : commands) {
-			c.undo();
-		}
-	}
+    @Override
+    public void undo() {
+        Collections.reverse(commands);
+        for (Command c : commands) {
+            c.undo();
+        }
+    }
 }

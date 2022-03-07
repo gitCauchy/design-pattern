@@ -1,32 +1,33 @@
 package com.cauchy.behavior.command.muticommands;
+
 /**
- * 
  * @author Cauchy
  * @ClassName DeleteCommand.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Á·Ï°-É¾³ıÃüÁî
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description ç»ƒä¹ -åˆ é™¤å‘½ä»¤
+ * @Version
  */
 public class DeleteCommand extends Command {
-	Content c;
-	/*
-	 * ÁÙÊ±±£´æ±»É¾³ıµÄÄÚÈİ
-	 */
-	String temp;
+    Content c;
+    /**
+     * ä¸´æ—¶ä¿å­˜è¢«åˆ é™¤çš„å†…å®¹
+     */
+    String temp;
 
-	
-	public DeleteCommand(Content c) {
-		super();
-		this.c = c;
-	}
 
-	public void doit() {
-		temp = c.msg;
-		c.msg = "";
-	}
+    public DeleteCommand(Content c) {
+        super();
+        this.c = c;
+    }
 
-	public void undo() {
-		c.msg = temp;
-	}
+    @Override
+    public void doit() {
+        temp = c.msg;
+        c.msg = "";
+    }
+
+    @Override
+    public void undo() {
+        c.msg = temp;
+    }
 }

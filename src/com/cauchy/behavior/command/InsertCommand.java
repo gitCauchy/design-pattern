@@ -1,31 +1,32 @@
 package com.cauchy.behavior.command;
+
 /**
- * 
  * @author Cauchy
  * @ClassName InsertCommand.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ²åÈëÃüÁî
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ’å…¥å‘½ä»¤
+ * @Version
  */
 public class InsertCommand extends Command {
-	
-	Content c;
-	String strToInsert;
 
-	public InsertCommand(Content c , String strToInsert) {
-		super();
-		this.c = c;
-		this.strToInsert = strToInsert;
-	}
+    Content c;
+    String strToInsert;
 
-	public void doit() {
-		c.msg = c.msg + strToInsert;
-		
-	}
+    public InsertCommand(Content c, String strToInsert) {
+        super();
+        this.c = c;
+        this.strToInsert = strToInsert;
+    }
 
-	public void undo() {
-		c.msg = c.msg.substring(0,c.msg.length() - strToInsert.length());
-	}
+    @Override
+    public void doit() {
+        c.msg = c.msg + strToInsert;
+
+    }
+
+    @Override
+    public void undo() {
+        c.msg = c.msg.substring(0, c.msg.length() - strToInsert.length());
+    }
 
 }

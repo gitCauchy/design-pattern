@@ -1,16 +1,16 @@
 package com.cauchy.behavior.command;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Command.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÊµÏÖÃüÁîµÄÖ´ĞĞÓë³·»ØµÄ¹¦ÄÜ
- * @Version 
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å®ç°å‘½ä»¤çš„æ‰§è¡Œä¸æ’¤å›çš„åŠŸèƒ½
+ * @Version
  *
  */
 abstract public class Command {
-	
-	public abstract void doit();
-	
-	public abstract void undo();
+
+    public abstract void doit();
+
+    public abstract void undo();
 }

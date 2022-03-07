@@ -1,35 +1,34 @@
 package com.cauchy.behavior.command.muticommands;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Content.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÃüÁî´¦ÀíµÄÄÚÈİ
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å‘½ä»¤å¤„ç†çš„å†…å®¹
  * @Version
- *
  */
 public class Content {
-	String msg;
+    String msg;
 
-	public Content(String msg) {
-		super();
-		this.msg = msg;
-	}
-	
-	public String toString() {
-		return "Content [msg=" + msg + "]";
-	}
+    public Content(String msg) {
+        super();
+        this.msg = msg;
+    }
 
-	public static void main(String[] args) {
-		Content c = new Content("hello");
-		String strToInsert = "word";
-		CommandChain cc = new CommandChain();
-		cc.add(new InsertCommand(c, strToInsert));
-		cc.add(new DeleteCommand(c));
-		cc.doit();
-		System.out.println(c);
-		cc.undo();
-		System.out.println(c);
-	}
+    @Override
+    public String toString() {
+        return "Content [msg=" + msg + "]";
+    }
+
+    public static void main(String[] args) {
+        Content c = new Content("hello");
+        String strToInsert = "word";
+        CommandChain cc = new CommandChain();
+        cc.add(new InsertCommand(c, strToInsert));
+        cc.add(new DeleteCommand(c));
+        cc.doit();
+        System.out.println(c);
+        cc.undo();
+        System.out.println(c);
+    }
 }
