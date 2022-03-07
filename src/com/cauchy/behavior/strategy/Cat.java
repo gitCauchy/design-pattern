@@ -1,31 +1,30 @@
 package com.cauchy.behavior.strategy;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Cat.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÊµÌåÀà-Ã¨£¬Á½Ö»Ã¨¿ÉÒÔ¸ù¾İÉí¸ß±È½Ï£¬Ò²¿ÉÒÔ¸ù¾İÌåÖØÀ´±È½Ï£¬»òÕßÊÇÆäËûµÄ±È½Ï·½Ê½£¬²»Í¬µÄ±È½Ï·½Ê½¾ÍĞèÒª ´´½¨²»Í¬µÄ±È½ÏÆ÷
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å®ä½“ç±»-çŒ«ï¼Œä¸¤åªçŒ«å¯ä»¥æ ¹æ®èº«é«˜æ¯”è¾ƒï¼Œä¹Ÿå¯ä»¥æ ¹æ®ä½“é‡æ¥æ¯”è¾ƒï¼Œæˆ–è€…æ˜¯å…¶ä»–çš„æ¯”è¾ƒæ–¹å¼ï¼Œä¸åŒçš„æ¯”è¾ƒæ–¹å¼å°±éœ€è¦ åˆ›å»ºä¸åŒçš„æ¯”è¾ƒå™¨
  * @Version
- *
  */
 public class Cat {
-	/*
-	 * ÌåÖØ
-	 */
-	int weight;
-	/*
-	 * Éí¸ß
-	 */
-	int height;
+    /**
+     * ä½“é‡
+     */
+    int weight;
+    /**
+     * èº«é«˜
+     */
+    int height;
 
-	public Cat(int weight, int height) {
-		super();
-		this.weight = weight;
-		this.height = height;
-	}
+    public Cat(int weight, int height) {
+        super();
+        this.weight = weight;
+        this.height = height;
+    }
 
-	public String toString() {
-		return "Cat [weight=" + weight + ", height=" + height + "]";
-	}
+    @Override
+    public String toString() {
+        return "Cat [weight=" + weight + ", height=" + height + "]";
+    }
 }

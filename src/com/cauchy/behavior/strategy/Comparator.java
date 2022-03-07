@@ -1,15 +1,13 @@
 package com.cauchy.behavior.strategy;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Comparator.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ±È½ÏÆ÷½Ó¿Ú
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ¯”è¾ƒå™¨æ¥å£
  * @Version
- *
  */
 public interface Comparator<T> {
 
-	int compare(T o1, T o2);
+    int compare(T o1, T o2);
 }

@@ -1,14 +1,13 @@
 package com.cauchy.behavior.strategy;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Comparable.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ±È½Ï½Ó¿Ú£¬ÊµÏÖ´Ë½Ó¿ÚĞèÒªÖØĞ´compareTo·½·¨
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ¯”è¾ƒæ¥å£ï¼Œå®ç°æ­¤æ¥å£éœ€è¦é‡å†™compareToæ–¹æ³•
+ * @Version
  */
 public interface Comparable<T> {
-	
-	int compareTo(T t);
+
+    int compareTo(T t);
 }
