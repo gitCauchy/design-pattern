@@ -1,15 +1,13 @@
 package com.cauchy.struct.proxy.staticproxy;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Movable.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ³éÏó
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description æŠ½è±¡
  * @Version
- *
  */
 public interface Movable {
 
-	void move();
+    void move();
 }

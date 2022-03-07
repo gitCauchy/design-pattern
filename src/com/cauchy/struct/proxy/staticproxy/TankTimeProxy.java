@@ -1,26 +1,26 @@
 package com.cauchy.struct.proxy.staticproxy;
+
 /**
- * 
  * @author Cauchy
  * @ClassName TankTimeProxy.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÔËĞĞÊ±¼ä´úÀí
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description è¿è¡Œæ—¶é—´ä»£ç†
+ * @Version
  */
-public class TankTimeProxy implements Movable{
-	Movable m ;
-	
-	public TankTimeProxy(Movable m) {
-		super();
-		this.m = m;
-	}
+public class TankTimeProxy implements Movable {
+    Movable m;
 
-	public void move() {
-		long start = System.currentTimeMillis();
-		m.move();
-		long end = System.currentTimeMillis();
-		System.out.println(end - start);
-	}
+    public TankTimeProxy(Movable m) {
+        super();
+        this.m = m;
+    }
+
+    @Override
+    public void move() {
+        long start = System.currentTimeMillis();
+        m.move();
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
+    }
 
 }

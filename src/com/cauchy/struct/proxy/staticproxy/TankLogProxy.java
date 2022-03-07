@@ -1,25 +1,25 @@
 package com.cauchy.struct.proxy.staticproxy;
+
 /**
- * 
  * @author Cauchy
  * @ClassName TankLogProxy.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description TODO
- * @Version ÈÕÖ¾´úÀí
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description æ—¥å¿—ä»£ç†
+ * @Version
  */
-public class TankLogProxy implements Movable{
-	Movable m;
-	
-	public TankLogProxy(Movable m) {
-		super();
-		this.m = m;
-	}
+public class TankLogProxy implements Movable {
+    Movable m;
 
-	public void move() {
-		System.out.println("Tank begin to move");
-		m.move();
-		System.out.println("Tank end to move");
-	}
+    public TankLogProxy(Movable m) {
+        super();
+        this.m = m;
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Tank begin to move");
+        m.move();
+        System.out.println("Tank end to move");
+    }
 
 }
