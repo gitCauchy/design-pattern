@@ -1,14 +1,14 @@
 package com.cauchy.behavior.iterator;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Iterator.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Iterator½Ó¿Ú
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description Iteratoræ¥å£
+ * @Version
  */
 public interface Iterator<E> {
-	boolean hasNext();
-	E next();
+    boolean hasNext();
+
+    E next();
 }

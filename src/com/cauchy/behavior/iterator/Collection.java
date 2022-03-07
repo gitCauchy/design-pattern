@@ -1,16 +1,17 @@
 package com.cauchy.behavior.iterator;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Collection.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description µü´úÆ÷Ä£Ê½£¬¸÷ÖÖÊı¾İ½á¹¹²»Ò»ÖÂ£¬ºÜÄÑÓĞÒ»ÖÂµÄ±éÀú·½Ê½£¬ËùÒÔÃ¿Ò»ÖÖÊı¾İ½á¹¹×Ô¼ºÀ´ÊµÏÖ×Ô¼ºµÄ±éÀú·½·¨¡£
- * 				Ê¹ÓÃ·ºĞÍ£¬¿ÉÒÔÔÚ¼¯ºÏÖĞ·ÅÖÃ¸÷ÖÖÀàĞÍ¡£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è¿­ä»£å™¨æ¨¡å¼ï¼Œå„ç§æ•°æ®ç»“æ„ä¸ä¸€è‡´ï¼Œå¾ˆéš¾æœ‰ä¸€è‡´çš„éå†æ–¹å¼ï¼Œæ‰€ä»¥æ¯ä¸€ç§æ•°æ®ç»“æ„è‡ªå·±æ¥å®ç°è‡ªå·±çš„éå†æ–¹æ³•ã€‚
+ * ä½¿ç”¨æ³›å‹ï¼Œå¯ä»¥åœ¨é›†åˆä¸­æ”¾ç½®å„ç§ç±»å‹ã€‚
+ * @Version
  */
 public interface Collection<E> {
-	void add(E o);
-	int size();
-	Iterator iterator();
+    void add(E o);
+
+    int size();
+
+    Iterator iterator();
 }
