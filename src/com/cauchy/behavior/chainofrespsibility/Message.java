@@ -1,49 +1,48 @@
 package com.cauchy.behavior.chainofrespsibility;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Message.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÏûÏ¢Àà£¬Õâ¸öÄ£Ê½µÄÀı×ÓÊÇ£¬ÂÛÌ³ÍøÕ¾´¦ÀíÌû×ÓÖĞµÄ²»ºÏ·¨´Ê»ã£¬²»Í¬µÄ´Ê»ãÊ¹ÓÃ²»Í¬µÄ¹ıÂËÆ÷¡£
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ¶ˆæ¯ç±»ï¼Œè¿™ä¸ªæ¨¡å¼çš„ä¾‹å­æ˜¯ï¼Œè®ºå›ç½‘ç«™å¤„ç†å¸–å­ä¸­çš„ä¸åˆæ³•è¯æ±‡ï¼Œä¸åŒçš„è¯æ±‡ä½¿ç”¨ä¸åŒçš„è¿‡æ»¤å™¨ã€‚
  * @Version
- *
  */
 public class Message {
-	String name;
-	String msg;
+    String name;
+    String msg;
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getMsg() {
-		return msg;
-	}
+    public String getMsg() {
+        return msg;
+    }
 
-	public void setMsg(String msg) {
-		this.msg = msg;
-	}
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
 
-	public String toString() {
-		return "Message [ msg=" + msg + "]";
-	}
-	
-	public static void main(String[] args) {
-		Message msg = new Message();
-		msg.setMsg("´ó¼ÒºÃ:)<script>»¶Ó­·ÃÎÊ£¬´ó¼Ò¶¼ÊÇ996");
-		FilterChain fc = new FilterChain();
-		fc.add(new HtmlFilter());
-		fc.add(new SensitiveFilter());
-		FilterChain fc2 = new FilterChain();
-		fc2.add(new FaceFilter());
-		fc.add(fc2);
-		fc.doFilter(msg);
-		System.out.println(msg);
-	}
+    @Override
+    public String toString() {
+        return "Message [ msg=" + msg + "]";
+    }
+
+    public static void main(String[] args) {
+        Message msg = new Message();
+        msg.setMsg("å¤§å®¶å¥½:)<script>æ¬¢è¿è®¿é—®ï¼Œå¤§å®¶éƒ½æ˜¯996");
+        FilterChain fc = new FilterChain();
+        fc.add(new HtmlFilter());
+        fc.add(new SensitiveFilter());
+        FilterChain fc2 = new FilterChain();
+        fc2.add(new FaceFilter());
+        fc.add(fc2);
+        fc.doFilter(msg);
+        System.out.println(msg);
+    }
 
 }

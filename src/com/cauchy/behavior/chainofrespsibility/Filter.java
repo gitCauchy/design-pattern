@@ -1,15 +1,15 @@
 package com.cauchy.behavior.chainofrespsibility;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Filter.java
- * @Date 2019Äê11ÔÂ30ÈÕ
+ * @Date 2019å¹´11æœˆ30æ—¥
  * @Description TODO
- * @Version ¹ıÂËÆ÷½Ó¿Ú
+ * @Version è¿‡æ»¤å™¨æ¥å£
  *
  */
 public interface Filter {
 
-	boolean doFilter(Message message);
+    boolean doFilter(Message message);
 }

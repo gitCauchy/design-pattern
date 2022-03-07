@@ -1,19 +1,20 @@
 package com.cauchy.behavior.chainofrespsibility;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName SensitiveFilter.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ½«Ãô¸Ğ´Ê×öÌæ»»
- * @Version 
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å°†æ•æ„Ÿè¯åšæ›¿æ¢
+ * @Version
  *
  */
 public class SensitiveFilter implements Filter{
 
-	public boolean doFilter(Message message) {
-		String str = message.getMsg();
-		str = str.replace("996", "995");
-		message.setMsg(str);
-		return true;
-	}
+    @Override
+    public boolean doFilter(Message message) {
+        String str = message.getMsg();
+        str = str.replace("996", "995");
+        message.setMsg(str);
+        return true;
+    }
 }

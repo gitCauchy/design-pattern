@@ -1,20 +1,19 @@
 package com.cauchy.behavior.chainofrespsibility;
 
 /**
- * 
  * @author Cauchy
  * @ClassName FaceFilter.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ½«Ğ¦Á³Ìæ»»³É¿ŞÁ³
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å°†ç¬‘è„¸æ›¿æ¢æˆå“­è„¸
  * @Version
- *
  */
 public class FaceFilter implements Filter {
 
-	public boolean doFilter(Message message) {
-		String str = message.getMsg();
-		str = str.replace(":)", ":(");
-		message.setMsg(str);
-		return true;
-	}
+    @Override
+    public boolean doFilter(Message message) {
+        String str = message.getMsg();
+        str = str.replace(":)", ":(");
+        message.setMsg(str);
+        return true;
+    }
 }

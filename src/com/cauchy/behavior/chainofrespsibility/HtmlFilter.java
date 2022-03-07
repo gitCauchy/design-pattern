@@ -1,20 +1,21 @@
 package com.cauchy.behavior.chainofrespsibility;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName HtmlFilter.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description TODO
- * @Version ¹ıÂËHtml±êÇ©£¬½«<Ìæ»»Îª[ £¬> Ìæ»»Îª]
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è¿‡æ»¤Htmlæ ‡ç­¾ï¼Œå°†<æ›¿æ¢ä¸º[ ï¼Œ> æ›¿æ¢ä¸º]
+ * @Version
  *
  */
 public class HtmlFilter implements Filter{
 
-	public boolean doFilter(Message message) {
-		String str = message.getMsg();
-		str = str.replace('<', '[');
-		str = str.replace('>', ']');
-		message.setMsg(str);
-		return true;
-	}
+    @Override
+    public boolean doFilter(Message message) {
+        String str = message.getMsg();
+        str = str.replace('<', '[');
+        str = str.replace('>', ']');
+        message.setMsg(str);
+        return true;
+    }
 }

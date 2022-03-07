@@ -4,28 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName FilterChain.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ½«ÕâĞ©¹ıÂËÆ÷´®ÆğÀ´£¬×é³ÉÁ´£¬ÕâÀï¹Ø¼üµÄ²½ÖèÔÚÓÚÈÃFilterChainÒ²À´ÊµÏÖFilter½Ó¿Ú
- * 				ÕâÑù¾ÍÄÜÈÃÁ½¸öÁ´Á¬ÆğÀ´
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å°†è¿™äº›è¿‡æ»¤å™¨ä¸²èµ·æ¥ï¼Œç»„æˆé“¾ï¼Œè¿™é‡Œå…³é”®çš„æ­¥éª¤åœ¨äºè®©FilterChainä¹Ÿæ¥å®ç°Filteræ¥å£
+ * 				è¿™æ ·å°±èƒ½è®©ä¸¤ä¸ªé“¾è¿èµ·æ¥
  * @Version
  *
  */
 public class FilterChain implements Filter {
-	List<Filter> filters = new ArrayList<>();
+    List<Filter> filters = new ArrayList<>();
 
-	public void add(Filter filter) {
-		filters.add(filter);
-	}
+    public void add(Filter filter) {
+        filters.add(filter);
+    }
 
-	public boolean doFilter(Message msg) {
-		for (Filter f : filters) {
-			if (!f.doFilter(msg)) {
-				return false;
-			}
-		}
-		return true;
-	}
+    @Override
+    public boolean doFilter(Message msg) {
+        for (Filter f : filters) {
+            if (!f.doFilter(msg)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
