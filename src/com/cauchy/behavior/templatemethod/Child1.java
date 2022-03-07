@@ -1,23 +1,23 @@
 package com.cauchy.behavior.templatemethod;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Child1.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description µÚÒ»ÖÖÊµÏÖ
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description ç¬¬ä¸€ç§å®ç°
+ * @Version
  */
 public class Child1 extends Father {
+    @Override
+    void op1() {
+        System.out.println("c1.op1");
 
-	void op1() {
-		System.out.println("c1.op1");
+    }
 
-	}
+    @Override
+    void op2() {
+        System.out.println("c1.op2");
 
-	void op2() {
-		System.out.println("c1.op2");
-
-	}
+    }
 
 }

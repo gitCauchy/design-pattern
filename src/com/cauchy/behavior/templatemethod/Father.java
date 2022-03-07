@@ -1,22 +1,20 @@
 package com.cauchy.behavior.templatemethod;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Father.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Ä£°å·½·¨ÊÇÖ¸Èç¹ûĞèÒªĞŞ¸Ä¸¸ÀàµÄ·½·¨£¨void m()£©Ö»ĞèÒª×ÓÀàÖØĞ´ Õâ¸ö·½·¨µ÷ÓÃµÄ·½·¨¼´¿É£¬
- * 				¼´ÎªÏÂÃæµÄop1(),op2()
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ¨¡æ¿æ–¹æ³•æ˜¯æŒ‡å¦‚æœéœ€è¦ä¿®æ”¹çˆ¶ç±»çš„æ–¹æ³•ï¼ˆvoid m()ï¼‰åªéœ€è¦å­ç±»é‡å†™ è¿™ä¸ªæ–¹æ³•è°ƒç”¨çš„æ–¹æ³•å³å¯ï¼Œ
+ * å³ä¸ºä¸‹é¢çš„op1(),op2()
  * @Version
- *
  */
 abstract public class Father {
-	void m() {
-		op1();
-		op2();
-	}
+    void m() {
+        op1();
+        op2();
+    }
 
-	abstract void op1();
+    abstract void op1();
 
-	abstract void op2();
+    abstract void op2();
 }
