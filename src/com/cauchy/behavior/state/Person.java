@@ -1,40 +1,38 @@
 package com.cauchy.behavior.state;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Person.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÊµÌåÀà
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å®žä½“ç±»
  * @Version
- *
  */
 public class Person {
-	String name;
-	PersonState state;
+    String name;
+    PersonState state;
 
-	public void sleep() {
-		state.sleep();
-	}
+    public void sleep() {
+        state.sleep();
+    }
 
-	public void eat() {
-		state.eat();
-	}
+    public void eat() {
+        state.eat();
+    }
 
-	public void drink() {
-		state.drink();
-	}
+    public void drink() {
+        state.drink();
+    }
 
-	public Person(String name, PersonState state) {
-		super();
-		this.name = name;
-		this.state = state;
-	}
-	
-	public static void main(String[] args) {
-		Person person = new Person("Cauchy", new YoungState());
-		person.drink();
-		person.eat();
-		person.sleep();
-	}
+    public Person(String name, PersonState state) {
+        super();
+        this.name = name;
+        this.state = state;
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("Cauchy", new YoungState());
+        person.drink();
+        person.eat();
+        person.sleep();
+    }
 }

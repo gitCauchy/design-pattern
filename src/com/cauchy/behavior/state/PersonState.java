@@ -1,15 +1,16 @@
 package com.cauchy.behavior.state;
+
 /**
- * 
  * @author Cauchy
  * @ClassName PersonState.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÈËµÄ×´Ì¬³éÏóÀà
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description äººçš„çŠ¶æ€æŠ½è±¡ç±»
+ * @Version
  */
 public abstract class PersonState {
-	abstract void eat();
-	abstract void drink();
-	abstract void sleep();
+    abstract void eat();
+
+    abstract void drink();
+
+    abstract void sleep();
 }

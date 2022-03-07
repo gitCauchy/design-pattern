@@ -1,25 +1,26 @@
 package com.cauchy.behavior.state;
+
 /**
- * 
  * @author Cauchy
  * @ClassName OldState.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÄêÀÏµÄ±íÏÖ
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å¹´è€çš„è¡¨ç°
+ * @Version
  */
 public class OldState extends PersonState {
+    @Override
+    void eat() {
+        System.out.println("eat little");
+    }
 
-	void eat() {
-		System.out.println("eat little");
-	}
+    @Override
+    void drink() {
+        System.out.println("drink little");
+    }
 
-	void drink() {
-		System.out.println("drink little");
-	}
+    @Override
+    void sleep() {
+        System.out.println("sleep little");
+    }
 
-	void sleep() {
-		System.out.println("sleep little");
-	}
-	
 }
