@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 /**
- * 
  * @author Cauchy
  * @ClassName CreateTaker.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ±¸ÍüÂ¼¹ÜÀíÕß
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description å¤‡å¿˜å½•ç®¡ç†è€…
+ * @Version
  */
 public class CreateTaker {
-	
-	private Map<String,PeopleMemento> mementos = new HashMap<>();
-	
-	public void add(String index,PeopleMemento peopleMemento) {
-		this.mementos.put(index,peopleMemento);
-	}
-	public PeopleMemento get(String index) {
-		return this.mementos.get(index);
-	}
+
+    private Map<String, PeopleMemento> mementos = new HashMap<>();
+
+    public void add(String index, PeopleMemento peopleMemento) {
+        this.mementos.put(index, peopleMemento);
+    }
+
+    public PeopleMemento get(String index) {
+        return this.mementos.get(index);
+    }
 }

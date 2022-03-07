@@ -3,18 +3,18 @@ package com.cauchy.behavior.momento;
  * 
  * @author Cauchy
  * @ClassName People.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ±¸ÍüÂ¼Ä£Ê½£¬½«¶ÔÏó±ä»¯µÄ×´Ì¬±£´æÆğÀ´
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description å¤‡å¿˜å½•æ¨¡å¼ï¼Œå°†å¯¹è±¡å˜åŒ–çš„çŠ¶æ€ä¿å­˜èµ·æ¥
  * @Version 
  *
  */
 public class People {
-	/*
-	 * ĞÕÃû
+	/**
+	 * å§“å
 	 */
 	private String name;
-	/*
-	 * ÄêÁä
+	/**
+	 * å¹´é¾„
 	 */
 	private int age;
 	
@@ -49,6 +49,7 @@ public class People {
 		this.age = age;
 	}
 
+	@Override
 	public String toString() {
 		return "People [name=" + name + ", age=" + age + "]";
 	}

@@ -1,30 +1,34 @@
 package com.cauchy.behavior.momento;
+
 /**
- * 
  * @author Cauchy
  * @ClassName PeopleMemento.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ±£´æ¶ÔÏóµÄ×´Ì¬
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ä¿å­˜å¯¹è±¡çš„çŠ¶æ€
+ * @Version
  */
 public class PeopleMemento {
-	private String name;
-	private int age;
-	public PeopleMemento(People people) {
-		this.name = people.getName();
-		this.age = people.getAge();
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
+    private String name;
+    private int age;
+
+    public PeopleMemento(People people) {
+        this.name = people.getName();
+        this.age = people.getAge();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
