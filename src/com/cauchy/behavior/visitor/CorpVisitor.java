@@ -1,26 +1,28 @@
 package com.cauchy.behavior.visitor;
+
 /**
- * 
  * @author Cauchy
  * @ClassName CorpVisitor.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ¼¯ÍÅÓÃ»§
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description é›†å›¢ç”¨æˆ·
+ * @Version
  */
-public class CorpVisitor implements Visitor{
+public class CorpVisitor implements Visitor {
 
-	double totalPrice = 0.0;
-	
-	public void visitCPU(CPU cpu) {
-		totalPrice += cpu.getPrice() * 0.8;
-	}
+    double totalPrice = 0.0;
 
-	public void visitMemory(Memory memory) {
-		totalPrice += memory.getPrice() * 0.8;
-	}
+    @Override
+    public void visitCPU(CPU cpu) {
+        totalPrice += cpu.getPrice() * 0.8;
+    }
 
-	public void visitBoard(Board board) {
-		totalPrice += board.getPrice() *0.8;
-	}
+    @Override
+    public void visitMemory(Memory memory) {
+        totalPrice += memory.getPrice() * 0.8;
+    }
+
+    @Override
+    public void visitBoard(Board board) {
+        totalPrice += board.getPrice() * 0.8;
+    }
 }

@@ -1,22 +1,22 @@
 package com.cauchy.behavior.visitor;
+
 /**
- * 
  * @author Cauchy
  * @ClassName CPU.java
- * @Date 2019Äê11ÔÂ30ÈÕ
+ * @Date 2019å¹´11æœˆ30æ—¥
  * @Description TODO
- * @Version 
- *
+ * @Version
  */
-public class CPU extends ComputerPart{
+public class CPU extends ComputerPart {
+    @Override
+    void accept(Visitor v) {
+        v.visitCPU(this);
 
-	void accept(Visitor v) {
-		v.visitCPU(this);
-		
-	}
+    }
 
-	double getPrice() {
-		return 300;
-	}
-	
+    @Override
+    double getPrice() {
+        return 300;
+    }
+
 }

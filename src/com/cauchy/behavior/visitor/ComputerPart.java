@@ -1,14 +1,14 @@
 package com.cauchy.behavior.visitor;
+
 /**
- * 
  * @author Cauchy
  * @ClassName ComputerPart.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description µçÄÔÔª¼şÀà
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description ç”µè„‘å…ƒä»¶ç±»
+ * @Version
  */
 public abstract class ComputerPart {
-	abstract void accept(Visitor v);
-	abstract double getPrice();
+    abstract void accept(Visitor v);
+
+    abstract double getPrice();
 }

@@ -1,15 +1,14 @@
 package com.cauchy.behavior.visitor;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Computer.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description µçÄÔ-ÓĞÈı²¿·Ö×é³É CPU-Memory-Board
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description ç”µè„‘-æœ‰ä¸‰éƒ¨åˆ†ç»„æˆ CPU-Memory-Board
+ * @Version
  */
 public class Computer {
-	ComputerPart cup = new CPU();
-	ComputerPart memory = new Memory();
-	ComputerPart board = new Board();
+    ComputerPart cup = new CPU();
+    ComputerPart memory = new Memory();
+    ComputerPart board = new Board();
 }
