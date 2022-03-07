@@ -1,33 +1,35 @@
 package com.cauchy.behavior.observer;
+
 /**
- * 
  * @author Cauchy
  * @ClassName WakeUpEvent.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Ğ¡º¢Ë¯ĞÑ¿ŞÄÖÊÂ¼ş
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å°å­©ç¡é†’å“­é—¹äº‹ä»¶
+ * @Version
  */
-public class WakeUpEvent extends Event{
-	/*
-	 * Ê±¼ä
-	 */
-	long timestamp;
-	/*
-	 * Î»ÖÃ
-	 */
-	String loc;
-	/*
-	 * ÊÂ¼şÔ´
-	 */
-	Child source;
-	public WakeUpEvent(long timestamp, String loc,Child source) {
-		super();
-		this.timestamp = timestamp;
-		this.loc = loc;
-		this.source = source;
-	}
-	Child getSource() {
-		return source;
-	}
+public class WakeUpEvent extends Event {
+    /**
+     * æ—¶é—´
+     */
+    long timestamp;
+    /**
+     * ä½ç½®
+     */
+    String loc;
+    /**
+     * äº‹ä»¶æº
+     */
+    Child source;
+
+    public WakeUpEvent(long timestamp, String loc, Child source) {
+        super();
+        this.timestamp = timestamp;
+        this.loc = loc;
+        this.source = source;
+    }
+
+    @Override
+    Child getSource() {
+        return source;
+    }
 }

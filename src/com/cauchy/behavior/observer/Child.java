@@ -4,42 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Child.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÑùÀıÍ¨¹ıĞ¡º¢¿ŞÄÖÕâÒ»ÊÂ¼ş£¬Èı¸ö¹Û²ìÕß·Ö±ğ¼ì²âµ½ÕâÒ»ÊÂ¼ş²¢×ö³ö·´Ó¦À´ÑİÊ¾Õâ¸öÄ£Ê½
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æ ·ä¾‹é€šè¿‡å°å­©å“­é—¹è¿™ä¸€äº‹ä»¶ï¼Œä¸‰ä¸ªè§‚å¯Ÿè€…åˆ†åˆ«æ£€æµ‹åˆ°è¿™ä¸€äº‹ä»¶å¹¶åšå‡ºååº”æ¥æ¼”ç¤ºè¿™ä¸ªæ¨¡å¼
  * @Version
  *
  */
 public class Child {
-	private boolean cry = false;
-	private List<Observer> observers = new ArrayList<>();
-	{
-		observers.add(new Dad());
-		observers.add(new Mom());
-		observers.add(new Dog());
-	}
+    private boolean cry = false;
+    private List<Observer> observers = new ArrayList<>();
+    {
+        observers.add(new Dad());
+        observers.add(new Mom());
+        observers.add(new Dog());
+    }
 
-	public boolean isCry() {
-		return cry;
-	}
+    public boolean isCry() {
+        return cry;
+    }
 
-	public void wakeUp() {
-		System.out.println("Waked Up! Crying");
-		cry = true;
-		WakeUpEvent event = new WakeUpEvent(System.currentTimeMillis(), "bed", this);
-		for (Observer o : observers) {
-			o.actionOnWakeUp(event);
-		}
-	}
-	
-	public void sleep() {
-		System.out.println("baby want to sleep");
-		
-		SleepEvent event = new SleepEvent(System.currentTimeMillis(), "bed", this);
-		for (Observer o : observers) {
-			o.actionOnSleep(event);
-		}
-	}
+    public void wakeUp() {
+        System.out.println("Waked Up! Crying");
+        cry = true;
+        WakeUpEvent event = new WakeUpEvent(System.currentTimeMillis(), "bed", this);
+        for (Observer o : observers) {
+            o.actionOnWakeUp(event);
+        }
+    }
+
+    public void sleep() {
+        System.out.println("baby want to sleep");
+
+        SleepEvent event = new SleepEvent(System.currentTimeMillis(), "bed", this);
+        for (Observer o : observers) {
+            o.actionOnSleep(event);
+        }
+    }
 }

@@ -1,15 +1,15 @@
 package com.cauchy.behavior.observer;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Event.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÊÂ¼ş³éÏóÀà£¬×ÓÀàÒªÖØĞ´»ñÈ¡ÊÂ¼şÔ´µÄ·½·¨
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description äº‹ä»¶æŠ½è±¡ç±»ï¼Œå­ç±»è¦é‡å†™è·å–äº‹ä»¶æºçš„æ–¹æ³•
  * @Version
  *
  */
 public abstract class Event<T> {
 
-	abstract T getSource();
+    abstract T getSource();
 }

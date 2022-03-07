@@ -1,17 +1,15 @@
 package com.cauchy.behavior.observer;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Observer.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ¹Û²ìÕß½Ó¿Ú
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è§‚å¯Ÿè€…æ¥å£
  * @Version
- *
  */
 public interface Observer {
 
-	void actionOnWakeUp(WakeUpEvent event);
-	
-	void actionOnSleep(SleepEvent event);
+    void actionOnWakeUp(WakeUpEvent event);
+
+    void actionOnSleep(SleepEvent event);
 }

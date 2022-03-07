@@ -1,38 +1,39 @@
 package com.cauchy.behavior.observer;
+
 /**
- * 
  * @author Cauchy
  * @ClassName SleepEvent.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Ó¤¶ùË¯¾õÊÂ¼ş
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å©´å„¿ç¡è§‰äº‹ä»¶
+ * @Version
  */
 public class SleepEvent extends Event {
 
-	/*
-	 * Ê±¼ä
-	 */
-	long timestamp;
-	/*
-	 * Î»ÖÃ
-	 */
-	String loc;
-	/*
-	 * ÊÂ¼şÔ´
-	 */
-	Child source;
-	public SleepEvent(long timestamp, String loc, Child source) {
-		super();
-		this.timestamp = timestamp;
-		this.loc = loc;
-		this.source = source;
-	}
-	
-	Object getSource() {
-		
-		return source;
-	}
-	
+    /**
+     * æ—¶é—´
+     */
+    long timestamp;
+    /**
+     * ä½ç½®
+     */
+    String loc;
+    /**
+     * äº‹ä»¶æº
+     */
+    Child source;
+
+    public SleepEvent(long timestamp, String loc, Child source) {
+        super();
+        this.timestamp = timestamp;
+        this.loc = loc;
+        this.source = source;
+    }
+
+    @Override
+    Object getSource() {
+
+        return source;
+    }
+
 
 }

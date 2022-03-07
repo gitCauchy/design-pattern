@@ -1,27 +1,28 @@
 package com.cauchy.behavior.observer;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Dog.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ¹Û²ìÕßĞ¡¹·
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è§‚å¯Ÿè€…å°ç‹—
+ * @Version
  */
-public class Dog implements Observer{
-	public void bark() {
-		System.out.println("dog barking...");
-	}
-	
-	public void keepSilence() {
-		System.out.println("dog keep silence...");
-	}
+public class Dog implements Observer {
+    public void bark() {
+        System.out.println("dog barking...");
+    }
 
-	public void actionOnWakeUp(WakeUpEvent event) {
-		bark();
-	}
+    public void keepSilence() {
+        System.out.println("dog keep silence...");
+    }
 
-	public void actionOnSleep(SleepEvent event) {
-		keepSilence();
-	}
+    @Override
+    public void actionOnWakeUp(WakeUpEvent event) {
+        bark();
+    }
+
+    @Override
+    public void actionOnSleep(SleepEvent event) {
+        keepSilence();
+    }
 }

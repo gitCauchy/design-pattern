@@ -1,27 +1,28 @@
 package com.cauchy.behavior.observer;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Dad.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ¹Û²ìÕß-¸¸Ç×
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è§‚å¯Ÿè€…-çˆ¶äº²
+ * @Version
  */
 public class Dad implements Observer {
-	public void feed() {
-		System.out.println("dad feeding...");
-	}
-	
-	public void keepSilence() {
-		System.out.println("dad keep silence...");
-	}
+    public void feed() {
+        System.out.println("dad feeding...");
+    }
 
-	public void actionOnWakeUp(WakeUpEvent event) {
-		feed();
-	}
+    public void keepSilence() {
+        System.out.println("dad keep silence...");
+    }
 
-	public void actionOnSleep(SleepEvent event) {
-		keepSilence();
-	}
+    @Override
+    public void actionOnWakeUp(WakeUpEvent event) {
+        feed();
+    }
+
+    @Override
+    public void actionOnSleep(SleepEvent event) {
+        keepSilence();
+    }
 }
