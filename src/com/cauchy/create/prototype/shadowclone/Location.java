@@ -23,6 +23,7 @@ public class Location {
         this.roomNo = roomNo;
     }
 
+    @Override
     public String toString() {
         return "Location [street=" + street + ", roomNo=" + roomNo + "]";
     }

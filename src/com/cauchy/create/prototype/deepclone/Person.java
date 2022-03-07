@@ -12,6 +12,7 @@ public class Person implements Cloneable {
     int score = 100;
     Location loc = new Location("bj", 22);
 
+    @Override
     public Object clone() throws CloneNotSupportedException {
         /**
          * 实现深克隆，即对象里的引用对象也要实现Cloneable接口克隆。
