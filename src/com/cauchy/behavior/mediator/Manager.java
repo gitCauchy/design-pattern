@@ -1,32 +1,31 @@
 package com.cauchy.behavior.mediator;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Manager.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÖĞ½é£¬´«µİÁ½¸öÔ±¹¤Ö®¼äµÄÏûÏ¢
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ä¸­ä»‹ï¼Œä¼ é€’ä¸¤ä¸ªå‘˜å·¥ä¹‹é—´çš„æ¶ˆæ¯
+ * @Version
  */
 public class Manager implements Mediator {
-	
-	public void change(String message, Employee employee, String name) {
-		System.out.println("¾­ÀíÊÕµ½" + name + "µÄĞèÇó£º" + message);
-		System.out.println("¾­Àí½«" + name + "µÄĞèÇó·¢ËÍ¸øÄ¿±êÖ°Ô±");
-		employee.called(message, name);
-	}
-	
-	public static void main(String[] args) {
-		// ·ÖÅäÖ°Ô±Óë¾­Àí
-		Mediator manager = new Manager();
-		Employee employeeA = new Employee(manager, "Ö°Ô±A");
-		Employee employeeB = new Employee(manager, "Ö°Ô±B");
-		Employee employeeC = new Employee(manager, "Ö°Ô±C");
-		// Ö°Ô±AµÄĞèÇó
-		String messageA = "ÕâĞ©×ÊÁÏĞèÒªBÖ°Ô±²Ù×÷";
-		employeeA.call(messageA, employeeB, employeeA.name);
-		// Ö°Ô±CµÄÇëÇó
-		String messageC = "ÕâĞ©×ÊÁÏĞèÒªBÖ°Ô±Ç©Ãû";
-		employeeC.call(messageC, employeeB, employeeC.name);
-	}
+    @Override
+    public void change(String message, Employee employee, String name) {
+        System.out.println("ç»ç†æ”¶åˆ°" + name + "çš„éœ€æ±‚ï¼š" + message);
+        System.out.println("ç»ç†å°†" + name + "çš„éœ€æ±‚å‘é€ç»™ç›®æ ‡èŒå‘˜");
+        employee.called(message, name);
+    }
+
+    public static void main(String[] args) {
+        // åˆ†é…èŒå‘˜ä¸ç»ç†
+        Mediator manager = new Manager();
+        Employee employeeA = new Employee(manager, "èŒå‘˜A");
+        Employee employeeB = new Employee(manager, "èŒå‘˜B");
+        Employee employeeC = new Employee(manager, "èŒå‘˜C");
+        // èŒå‘˜Açš„éœ€æ±‚
+        String messageA = "è¿™äº›èµ„æ–™éœ€è¦BèŒå‘˜æ“ä½œ";
+        employeeA.call(messageA, employeeB, employeeA.name);
+        // èŒå‘˜Cçš„è¯·æ±‚
+        String messageC = "è¿™äº›èµ„æ–™éœ€è¦BèŒå‘˜ç­¾å";
+        employeeC.call(messageC, employeeB, employeeC.name);
+    }
 }

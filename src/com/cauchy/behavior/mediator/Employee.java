@@ -1,29 +1,29 @@
 package com.cauchy.behavior.mediator;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Employee.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÖĞ½éÄ£Ê½-Ô±¹¤ Í¨Ñ¶ÓĞManager´«µİ
- * @Version 
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ä¸­ä»‹æ¨¡å¼-å‘˜å·¥ é€šè®¯æœ‰Managerä¼ é€’
+ * @Version
  *
  */
 public class Employee {
-	String name;
-	
-	private Mediator mediator;
+    String name;
 
-	public Employee(Mediator mediator, String name) {
-		this.mediator = mediator;
-		this.name = name;
-	}
+    private Mediator mediator;
 
-	public void called(String message, String nname) {
-		System.out.println(name + "½ÓÊÕµ½À´×Ô" + nname + "µÄĞèÇó£º" + message);
-	}
+    public Employee(Mediator mediator, String name) {
+        this.mediator = mediator;
+        this.name = name;
+    }
 
-	public void call(String message, Employee employee, String nname) {
-		System.out.println(nname + "·¢ÆğĞèÇó£º" + message);
-		mediator.change(message, employee, nname);
-	}
+    public void called(String message, String name) {
+        System.out.println(this.name + "æ¥æ”¶åˆ°æ¥è‡ª" + name + "çš„éœ€æ±‚ï¼š" + message);
+    }
+
+    public void call(String message, Employee employee, String name) {
+        System.out.println(name + "å‘èµ·éœ€æ±‚ï¼š" + message);
+        mediator.change(message, employee, name);
+    }
 }

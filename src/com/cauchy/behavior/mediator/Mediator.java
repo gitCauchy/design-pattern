@@ -1,14 +1,14 @@
 package com.cauchy.behavior.mediator;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Mediator.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description Ã½½é½Ó¿Ú
- * @Version 
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description åª’ä»‹æ¥å£
+ * @Version
  *
  */
 public interface Mediator {
-	
-	void change(String message, Employee employee, String name);
+
+    void change(String message, Employee employee, String name);
 }
