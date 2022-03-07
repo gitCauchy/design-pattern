@@ -1,31 +1,30 @@
 package com.cauchy.create.prototype.shadowclone;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Location.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description µØÖ·Àà£¬ÈôĞèÒª¿ËÂ¡£¬ĞèÒªÊµÏÖCloneable½Ó¿Ú£¬ÖØĞ´¿ËÂ¡·½·¨¡£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description åœ°å€ç±»ï¼Œè‹¥éœ€è¦å…‹éš†ï¼Œéœ€è¦å®ç°Cloneableæ¥å£ï¼Œé‡å†™å…‹éš†æ–¹æ³•ã€‚
+ * @Version
  */
 public class Location {
-	/*
-	 * ½ÖÇø
-	 */
-	String street;
-	/*
-	 * ·¿¼äºÅÂë
-	 */
-	int roomNo;
+    /**
+     * è¡—åŒº
+     */
+    String street;
+    /**
+     * æˆ¿é—´å·ç 
+     */
+    int roomNo;
 
-	public Location(String street, int roomNo) {
-		super();
-		this.street = street;
-		this.roomNo = roomNo;
-	}
+    public Location(String street, int roomNo) {
+        super();
+        this.street = street;
+        this.roomNo = roomNo;
+    }
 
-	public String toString() {
-		return "Location [street=" + street + ", roomNo=" + roomNo + "]";
-	}
+    public String toString() {
+        return "Location [street=" + street + ", roomNo=" + roomNo + "]";
+    }
 
 }

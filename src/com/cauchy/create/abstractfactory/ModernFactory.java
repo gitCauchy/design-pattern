@@ -1,25 +1,27 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName ModernFactory.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÏÖ´ú¹¤³§
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description çŽ°ä»£å·¥åŽ‚
+ * @Version
  */
-public class ModernFactory extends AbstractFactory{
+public class ModernFactory extends AbstractFactory {
 
-	Food createFood() {
-		return new Bread();
-	}
+    @Override
+    Food createFood() {
+        return new Bread();
+    }
 
-	Vichile crateVehicle() {
-		return new Car();
-	}
+    @Override
+    Vichile crateVehicle() {
+        return new Car();
+    }
 
-	Weapon createWeapon() {
-		return new Gun();
-	}
-	
+    @Override
+    Weapon createWeapon() {
+        return new Gun();
+    }
+
 }

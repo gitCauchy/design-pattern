@@ -1,17 +1,17 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName AbstractFactory.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ³éÏó¹¤³§½â¾öÁË²úÆ·×åÎÊÌâ
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æŠ½è±¡å·¥å‚è§£å†³äº†äº§å“æ—é—®é¢˜
+ * @Version
  */
 public abstract class AbstractFactory {
-	abstract Food createFood();
 
-	abstract Vichile crateVehicle();
+    abstract Food createFood();
 
-	abstract Weapon createWeapon();
+    abstract Vichile crateVehicle();
+
+    abstract Weapon createWeapon();
 }

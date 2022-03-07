@@ -1,16 +1,16 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Car.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ½»Í¨¹¤¾ß-Æû³µ
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº¤é€šå·¥å…·-æ±½è½¦
+ * @Version
  */
 public class Car extends Vichile {
-	
-	public void go() {
-		System.out.println("car go .....");
-	}
+
+    @Override
+    public void go() {
+        System.out.println("car go .....");
+    }
 }

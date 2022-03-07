@@ -1,18 +1,17 @@
 package com.cauchy.create.abstractfactory;
 
 /**
- * 
  * @author Cauchy
  * @ClassName SteamBread.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description Ê³Æ·-ÂøÍ·
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description é£Ÿå“-é¦’å¤´
  * @Version
- *
  */
 public class SteamBread extends Food {
 
-	void printName() {
-		System.out.println("stream bread");
-	}
+    @Override
+    void printName() {
+        System.out.println("stream bread");
+    }
 
 }

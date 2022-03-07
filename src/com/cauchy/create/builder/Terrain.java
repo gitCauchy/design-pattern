@@ -1,21 +1,19 @@
 package com.cauchy.create.builder;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Terrain.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description µØĞÎ£¬¹¹³ÉºÜ¸´ÔÓ£¬ÓÉÇ½±Ú£¬µï±¤£¬µØÀ×±íÊ¾
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description åœ°å½¢ï¼Œæ„æˆå¾ˆå¤æ‚ï¼Œç”±å¢™å£ï¼Œç¢‰å ¡ï¼Œåœ°é›·è¡¨ç¤º
  * @Version
- *
  */
 public class Terrain {
-	Wall w;
-	Fort f;
-	Mine m;
+    Wall w;
+    Fort f;
+    Mine m;
 
-	public static void main(String[] args) {
-		TerrainBuilder builder = new ComplexTerrainBuilder();
-		Terrain terrain = builder.buildFort().buildMine().buildWall().build();
-	}
+    public static void main(String[] args) {
+        TerrainBuilder builder = new ComplexTerrainBuilder();
+        Terrain terrain = builder.buildFort().buildMine().buildWall().build();
+    }
 }

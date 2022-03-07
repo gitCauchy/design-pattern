@@ -1,16 +1,15 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Sword.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÎäÆ÷-½£
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ­¦å™¨-å‰‘
+ * @Version
  */
-public class Sword extends Weapon{
-
-	void kill() {
-		System.out.println("kill by sword");
-	}
+public class Sword extends Weapon {
+    @Override
+    void kill() {
+        System.out.println("kill by sword");
+    }
 }

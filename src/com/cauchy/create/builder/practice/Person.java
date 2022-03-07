@@ -1,48 +1,49 @@
 package com.cauchy.create.builder.practice;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Person.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description BuilderÄ£Ê½Á·Ï°Ìâ-PersonÀà
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description Builderæ¨¡å¼ç»ƒä¹ é¢˜-Personç±»
  * @Version
  *
  */
 public class Person {
-	/*
-	 * ĞÕÃû
-	 */
-	String name;
-	/*
-	 * ÄêÁä
-	 */
-	int age;
-	/*
-	 * ĞÔ±ğ 0 - ÄĞ 1 - Å®
-	 */
-	int sex;
-	/*
-	 * Éí¸ß
-	 */
-	float height;
-	/*
-	 * ÌåÖØ
-	 */
-	float weight;
-	/*
-	 * ×¡Ö·
-	 */
-	Location loc;
+    /**
+     * å§“å
+     */
+    String name;
+    /**
+     * å¹´é¾„
+     */
+    int age;
+    /**
+     * æ€§åˆ« 0 - ç”· 1 - å¥³
+     */
+    int sex;
+    /**
+     * èº«é«˜
+     */
+    float height;
+    /**
+     * ä½“é‡
+     */
+    float weight;
+    /**
+     * ä½å€
+     */
+    Location loc;
 
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", sex=" + sex + ", height=" + height + ", weight=" + weight
-				+ ", loc=" + loc + "]";
-	}
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + ", sex=" + sex + ", height=" + height + ", weight=" + weight
+                + ", loc=" + loc + "]";
+    }
 
-	public static void main(String[] args) {
-		Person person = new PersonBuilder().basicInfo("Cauchy", 25, 0).healthInfo(75, 173).addressInfo("Beijing", 1)
-				.builder();
-		System.out.println(person);
-	}
+    public static void main(String[] args) {
+        Person person = new PersonBuilder().basicInfo("Cauchy", 25, 0).healthInfo(75, 173).addressInfo("Beijing", 1)
+                .builder();
+        System.out.println(person);
+    }
 }

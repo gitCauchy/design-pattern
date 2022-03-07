@@ -1,34 +1,37 @@
 package com.cauchy.create.builder;
+
 /**
- * 
  * @author Cauchy
  * @ClassName ComplexTerrainBuilder.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¸´ÔÓµØĞÎ¹¹ÔìÆ÷
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description å¤æ‚åœ°å½¢æ„é€ å™¨
+ * @Version
  */
-public class ComplexTerrainBuilder implements TerrainBuilder{
-	
-	Terrain terrain = new Terrain();
-	
-	public TerrainBuilder buildWall() {
-		terrain.w = new Wall(10,10,10,10);
-		return this;
-	}
+public class ComplexTerrainBuilder implements TerrainBuilder {
 
-	public TerrainBuilder buildFort() {
-		terrain.f = new Fort(10,10,10,10);
-		return this;
-	}
+    Terrain terrain = new Terrain();
 
-	public TerrainBuilder buildMine() {
-		terrain.m = new Mine(10,10,10,10);
-		return this;
-	}
+    @Override
+    public TerrainBuilder buildWall() {
+        terrain.w = new Wall(10, 10, 10, 10);
+        return this;
+    }
 
-	public Terrain build() {
-		return terrain;
-	}
-	
+    @Override
+    public TerrainBuilder buildFort() {
+        terrain.f = new Fort(10, 10, 10, 10);
+        return this;
+    }
+
+    @Override
+    public TerrainBuilder buildMine() {
+        terrain.m = new Mine(10, 10, 10, 10);
+        return this;
+    }
+
+    @Override
+    public Terrain build() {
+        return terrain;
+    }
+
 }

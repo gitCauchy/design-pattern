@@ -1,17 +1,16 @@
 package com.cauchy.create.abstractfactory;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Gun.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÎäÆ÷-Ç¹
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ­¦å™¨-æžª
  * @Version
- *
  */
 public class Gun extends Weapon {
 
-	void kill() {
-		System.out.println("kill by shot");
-	}
+    @Override
+    void kill() {
+        System.out.println("kill by shot");
+    }
 }

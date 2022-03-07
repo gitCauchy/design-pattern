@@ -1,16 +1,15 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Bread.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description Ê³Æ·-Ãæ°ü
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description é£Ÿå“-é¢åŒ…
+ * @Version
  */
-public class Bread extends Food{
-	
-	public void printName() {
-		System.out.println("bread");
-	}
+public class Bread extends Food {
+    @Override
+    public void printName() {
+        System.out.println("bread");
+    }
 }

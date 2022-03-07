@@ -1,23 +1,23 @@
 package com.cauchy.create.builder;
 
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Mine.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description µØÀ×
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description åœ°é›·
  * @Version
  *
  */
 public class Mine {
-	int x, y, w, h;
+    int x, y, w, h;
 
-	public Mine(int x, int y, int w, int h) {
-		super();
-		this.x = x;
-		this.y = y;
-		this.w = w;
-		this.h = h;
-	}
+    public Mine(int x, int y, int w, int h) {
+        super();
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+    }
 
 }

@@ -1,23 +1,23 @@
 package com.cauchy.create.builder;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName TerrainBuilder.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description µØĞÎµÄ¹¹½¨Æ÷
- * @Version 
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description åœ°å½¢çš„æ„å»ºå™¨
+ * @Version
  *
  */
 public interface TerrainBuilder {
-	/*
-	 * ÕâÀïÈı¸ö·½·¨·µ»ØÀàĞÍÎ´TerrainBuilder µÄÔ­ÒòÊÇÎªÁË·½±ãºóĞøµÄÁ´Ê½±à³Ì
-	 */
-	TerrainBuilder buildWall();
-	TerrainBuilder buildFort();
-	TerrainBuilder buildMine();
-	/**
-	 * 
-	 * @return µØĞÎ¶ÔÏó
-	 */
-	Terrain build();
+    /**
+     * è¿™é‡Œä¸‰ä¸ªæ–¹æ³•è¿”å›ç±»å‹æœªTerrainBuilder çš„åŸå› æ˜¯ä¸ºäº†æ–¹ä¾¿åç»­çš„é“¾å¼ç¼–ç¨‹
+     */
+    TerrainBuilder buildWall();
+    TerrainBuilder buildFort();
+    TerrainBuilder buildMine();
+    /**
+     *
+     * @return åœ°å½¢å¯¹è±¡
+     */
+    Terrain build();
 }

@@ -1,14 +1,13 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Food.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description Ê³Æ·³éÏóÀà
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description é£Ÿå“æŠ½è±¡ç±»
+ * @Version
  */
 public abstract class Food {
-	
-	abstract void printName();
+
+    abstract void printName();
 }

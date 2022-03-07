@@ -1,24 +1,24 @@
 package com.cauchy.create.builder.practice;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Location.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description BuilderÄ£Ê½Á·Ï°-LocationÀà
- * @Version 
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description Builderæ¨¡å¼ç»ƒä¹ -Locationç±»
+ * @Version
  *
  */
 public class Location {
-	/*
-	 * ½ÖÇø
-	 */
-	String street;
-	/*
-	 * ºÅÂë
-	 */
-	int number;
-	
-	public String toString() {
-		return "Location [street=" + street + ", number=" + number + "]";
-	}
+    /*
+     * è¡—åŒº
+     */
+    String street;
+    /*
+     * å·ç 
+     */
+    int number;
+
+    public String toString() {
+        return "Location [street=" + street + ", number=" + number + "]";
+    }
 }

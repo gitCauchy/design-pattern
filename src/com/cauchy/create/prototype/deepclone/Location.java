@@ -1,30 +1,32 @@
 package com.cauchy.create.prototype.deepclone;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Location.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description Éî¿ËÂ¡£¬LocationÊÇPerson¶ÔÏóµÄÒ»¸ö³ÉÔ±±äÁ¿£¬µ±Person¿ËÂ¡Ê±£¬LocationÒ²Ó¦¸ÃÊµÏÖcloneable½Ó¿Ú
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ·±å…‹éš†ï¼ŒLocationæ˜¯Personå¯¹è±¡çš„ä¸€ä¸ªæˆå‘˜å˜é‡ï¼Œå½“Personå…‹éš†æ—¶ï¼ŒLocationä¹Ÿåº”è¯¥å®ç°cloneableæ¥å£
+ * @Version
  */
-public class Location implements Cloneable{
-	/*
-	 * String ÀàĞÍ²»ĞèÒª½øĞĞÉî¿ËÂ¡£¬StringÊÇÖ¸¶¨µÄ³£Á¿³Ø£¬ĞŞ¸ÄÆäÖĞshÊ±£¬²»»á¸Ä±äbj
-	 */
-	String street;
-	int roomNo;
-	public Location(String street, int roomNo) {
-		super();
-		this.street = street;
-		this.roomNo = roomNo;
-	}
-	@Override
-	public String toString() {
-		return "Location [street=" + street + ", roomNo=" + roomNo + "]";
-	}
-	
-	public Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
+public class Location implements Cloneable {
+    /**
+     * String ç±»å‹ä¸éœ€è¦è¿›è¡Œæ·±å…‹éš†ï¼ŒStringæ˜¯æŒ‡å®šçš„å¸¸é‡æ± ï¼Œä¿®æ”¹å…¶ä¸­shæ—¶ï¼Œä¸ä¼šæ”¹å˜bj
+     */
+    String street;
+    int roomNo;
+
+    public Location(String street, int roomNo) {
+        super();
+        this.street = street;
+        this.roomNo = roomNo;
+    }
+
+    @Override
+    public String toString() {
+        return "Location [street=" + street + ", roomNo=" + roomNo + "]";
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }

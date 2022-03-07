@@ -1,25 +1,27 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName AncientFactory.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ¹Å´ú¹¤³§
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description å¤ä»£å·¥å‚
+ * @Version
  */
 public class AncientFactory extends AbstractFactory {
 
-	Food createFood() {
-		return new SteamBread();
-	}
+    @Override
+    Food createFood() {
+        return new SteamBread();
+    }
 
-	Vichile crateVehicle() {
-		return new Coach();
-	}
+    @Override
+    Vichile crateVehicle() {
+        return new Coach();
+    }
 
-	Weapon createWeapon() {
-		return new Sword();
-	}
+    @Override
+    Weapon createWeapon() {
+        return new Sword();
+    }
 
 }

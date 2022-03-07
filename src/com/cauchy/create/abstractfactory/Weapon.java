@@ -1,13 +1,13 @@
 package com.cauchy.create.abstractfactory;
 /**
- * 
+ *
  * @author Cauchy
  * @ClassName Weapon.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ÎäÆ÷
- * @Version 
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æ­¦å™¨
+ * @Version
  *
  */
 public abstract class Weapon {
-	abstract void kill();
+    abstract void kill();
 }

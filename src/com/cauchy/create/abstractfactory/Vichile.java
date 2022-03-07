@@ -1,14 +1,13 @@
 package com.cauchy.create.abstractfactory;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Vichile.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ½»Í¨¹¤¾ß
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº¤é€šå·¥å…·
+ * @Version
  */
 public abstract class Vichile {
-	
-	abstract void go();
+
+    abstract void go();
 }

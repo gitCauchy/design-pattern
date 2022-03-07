@@ -1,35 +1,34 @@
 package com.cauchy.create.prototype.shadowclone;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Person.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description Ç³¿ËÂ¡
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description æµ…å…‹éš†
  * @Version
- *
  */
 public class Person implements Cloneable {
 
-	int age = 8;
-	int score = 100;
-	Location loc = new Location("bj", 22);
+    int age = 8;
+    int score = 100;
+    Location loc = new Location("bj", 22);
 
-	public Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
-	public static void main(String[] args) throws CloneNotSupportedException {
-		Person p1 = new Person();
-		Person p2 = (Person) p1.clone();
-		System.out.println(p2.age + " " + p2.score);
-		System.out.println(p2.loc);
-		/**
-		 * Location ²¢²»ÊÇ8ÖÖ»ù±¾ÀàĞÍ£¬Îª¿ËÂ¡Ö»ÊÇ½«¶ÑÄÚ´æÖĞnew³öÀ´µÄ¶ÔÏó£¬ÔÚÄÚ´æÖĞ¸´ÖÆÒ»·İ£¬
-		 * ¿ËÂ¡³öÀ´µÄ¶ÔÏóÔÚÖ¸ÏòLocation¶ÔÏóµÄÖ¸ÕëµØÖ·ÏàÍ¬£¬ËùÒÔÊä³öµÄ±È½Ï½á¹ûÏàÍ¬¡£
-		 */
-		System.out.println(p1.loc == p2.loc);
-		p1.loc.street = "sh";
-		System.out.println(p2.loc);
-	}
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Person p1 = new Person();
+        Person p2 = (Person) p1.clone();
+        System.out.println(p2.age + " " + p2.score);
+        System.out.println(p2.loc);
+        /**
+         * Location å¹¶ä¸æ˜¯8ç§åŸºæœ¬ç±»å‹ï¼Œä¸ºå…‹éš†åªæ˜¯å°†å †å†…å­˜ä¸­newå‡ºæ¥çš„å¯¹è±¡ï¼Œåœ¨å†…å­˜ä¸­å¤åˆ¶ä¸€ä»½ï¼Œ
+         * å…‹éš†å‡ºæ¥çš„å¯¹è±¡åœ¨æŒ‡å‘Locationå¯¹è±¡çš„æŒ‡é’ˆåœ°å€ç›¸åŒï¼Œæ‰€ä»¥è¾“å‡ºçš„æ¯”è¾ƒç»“æœç›¸åŒã€‚
+         */
+        System.out.println(p1.loc == p2.loc);
+        p1.loc.street = "sh";
+        System.out.println(p2.loc);
+    }
 }

@@ -1,17 +1,16 @@
 package com.cauchy.create.abstractfactory;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Coach.java
- * @Date 2019Äê11ÔÂ29ÈÕ
- * @Description ½»Í¨¹¤¾ß-Âí³µ
+ * @Date 2019å¹´11æœˆ29æ—¥
+ * @Description äº¤é€šå·¥å…·-é©¬è½¦
  * @Version
- *
  */
 public class Coach extends Vichile {
 
-	void go() {
-		System.out.println("Coach go");
-	}
+    @Override
+    void go() {
+        System.out.println("Coach go");
+    }
 }
