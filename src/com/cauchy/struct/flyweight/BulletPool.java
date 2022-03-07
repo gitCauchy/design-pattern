@@ -4,38 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
  * @author Cauchy
  * @ClassName BulletPool.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÏíÔªÄ£Ê½-½«Ğ¡¶ÔÏó·ÅÖÃÔÚ³Ø×ÓÖĞ£¬Ê¹ÓÃÊ±ÎŞĞènew£¬Ö±½Ó´Ó³Ø×ÓÀïÃæÈ¡
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description äº«å…ƒæ¨¡å¼-å°†å°å¯¹è±¡æ”¾ç½®åœ¨æ± å­ä¸­ï¼Œä½¿ç”¨æ—¶æ— éœ€newï¼Œç›´æ¥ä»æ± å­é‡Œé¢å–
  * @Version
- *
  */
 public class BulletPool {
-	List<Bullet> bullets = new ArrayList<Bullet>();
-	{
-		for (int i = 0; i < 500; i++) {
-			bullets.add(new Bullet());
-		}
-	}
+    List<Bullet> bullets = new ArrayList<>();
 
-	public Bullet getBullet() {
-		for (int i = 0; i < bullets.size(); i++) {
-			Bullet b = bullets.get(i);
-			if (!b.living) {
-				return b;
-			}
-		}
-		return new Bullet();
-	}
+    {
+        for (int i = 0; i < 500; i++) {
+            bullets.add(new Bullet());
+        }
+    }
 
-	public static void main(String[] args) {
-		BulletPool bp = new BulletPool();
-		for (int i = 0; i < 1000; i++) {
-			Bullet bullet = bp.getBullet();
-			System.out.println(bullet);
-		}
-	}
+    public Bullet getBullet() {
+        for (int i = 0; i < bullets.size(); i++) {
+            Bullet b = bullets.get(i);
+            if (!b.living) {
+                return b;
+            }
+        }
+        return new Bullet();
+    }
+
+    public static void main(String[] args) {
+        BulletPool bp = new BulletPool();
+        for (int i = 0; i < 1000; i++) {
+            Bullet bullet = bp.getBullet();
+            System.out.println(bullet);
+        }
+    }
 
 }

@@ -1,25 +1,24 @@
 package com.cauchy.struct.decorator;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Decorator.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ×°ÊÎÆ÷½Ó¿Ú
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è£…é¥°å™¨æ¥å£
  * @Version
- *
  */
 public abstract class Decorator implements Apple {
 
-	protected Apple apple;
+    protected Apple apple;
 
-	public Decorator(Apple apple) {
-		super();
-		this.apple = apple;
-	}
+    public Decorator(Apple apple) {
+        super();
+        this.apple = apple;
+    }
 
-	public void desc() {
-		apple.desc();
-	}
+    @Override
+    public void desc() {
+        apple.desc();
+    }
 
 }

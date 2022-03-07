@@ -1,25 +1,25 @@
 package com.cauchy.struct.decorator;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Main.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ²âÊÔÀà
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description æµ‹è¯•ç±»
+ * @Version
  */
 public class Main {
-	public static void main(String[] args) {
-		Apple apple = new ConcreteApple();
-		System.out.println("------Î´×°ÊÎ------");
-		apple.desc();
-		System.out.println("----------------");
-		test(apple);
-	}
-	public static void test(Apple apple) {
-		GreenDecorator decorator = new GreenDecorator(apple);
-		System.out.println("------×°ÊÎºó-------");
-		decorator.desc();
-		System.out.println("------------------");
-	}
+    public static void main(String[] args) {
+        Apple apple = new ConcreteApple();
+        System.out.println("------æœªè£…é¥°------");
+        apple.desc();
+        System.out.println("----------------");
+        test(apple);
+    }
+
+    public static void test(Apple apple) {
+        GreenDecorator decorator = new GreenDecorator(apple);
+        System.out.println("------è£…é¥°å-------");
+        decorator.desc();
+        System.out.println("------------------");
+    }
 }

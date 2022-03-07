@@ -1,26 +1,27 @@
 package com.cauchy.struct.decorator;
+
 /**
- * 
  * @author Cauchy
  * @ClassName GreenDecorator.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÂÌÉ«×°ÊÎÆ÷
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description ç»¿è‰²è£…é¥°å™¨
+ * @Version
  */
 public class GreenDecorator extends Decorator {
 
-	public GreenDecorator(Apple apple) {
-		super(apple);
-	}
-	public void descB() {
-		System.out.println("±»×°ÊÎÆ÷À©Õ¹ĞŞÊÎ");
-	}
-	
-	public void desc() {
-		System.out.println("×°ÊÎ³ÉÎªÂÌÉ«µÄ");
-		super.desc();
-		System.out.println("×°ÊÎ½áÊø");
-	}
+    public GreenDecorator(Apple apple) {
+        super(apple);
+    }
+
+    public void descB() {
+        System.out.println("è¢«è£…é¥°å™¨æ‰©å±•ä¿®é¥°");
+    }
+
+    @Override
+    public void desc() {
+        System.out.println("è£…é¥°æˆä¸ºç»¿è‰²çš„");
+        super.desc();
+        System.out.println("è£…é¥°ç»“æŸ");
+    }
 
 }

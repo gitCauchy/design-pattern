@@ -1,20 +1,20 @@
 package com.cauchy.struct.flyweight;
 
 import java.util.UUID;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Bullet.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ÏíÔªÄ£Ê½-ÊµÌåÀà-×Óµ¯
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description äº«å…ƒæ¨¡å¼-å®ä½“ç±»-å­å¼¹
+ * @Version
  */
 public class Bullet {
-	public UUID id = UUID.randomUUID();
-	boolean living = true;
+    public UUID id = UUID.randomUUID();
+    boolean living = true;
 
-	public String toString() {
-		return "Bullet [id=" + id + "]";
-	}
+    @Override
+    public String toString() {
+        return "Bullet [id=" + id + "]";
+    }
 }
