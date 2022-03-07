@@ -1,18 +1,16 @@
 package com.cauchy.struct.briage.practice;
 
 /**
- * 
  * @author Cauchy
  * @ClassName White.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description »ÒÉ«
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ç°è‰²
  * @Version
- *
  */
 public class Gray implements Color {
-
-	public void print(Shape shape) {
-		System.out.println("gray " + shape);
-	}
+    @Override
+    public void print(Shape shape) {
+        System.out.println("gray " + shape);
+    }
 
 }

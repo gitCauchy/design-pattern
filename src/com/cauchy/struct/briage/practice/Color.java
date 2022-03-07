@@ -1,15 +1,13 @@
 package com.cauchy.struct.briage.practice;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Color.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÑÕÉ«½Ó¿Ú
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description é¢œè‰²æ¥å£
  * @Version
- *
  */
 public interface Color {
-	
-	void print(Shape shape);
+
+    void print(Shape shape);
 }

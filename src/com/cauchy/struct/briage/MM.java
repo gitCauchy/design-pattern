@@ -1,13 +1,12 @@
 package com.cauchy.struct.briage;
+
 /**
- * 
  * @author Cauchy
  * @ClassName MM.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÀñÎïµÄ½ÓÊÜÕß
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ç¤¼ç‰©çš„æ¥å—è€…
+ * @Version
  */
 public class MM {
-	private String name;
+    private String name;
 }

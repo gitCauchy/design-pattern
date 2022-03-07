@@ -1,25 +1,23 @@
 package com.cauchy.struct.briage.practice;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Shape.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÐÎ×´³éÏóÀà
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description å½¢çŠ¶æŠ½è±¡ç±»
  * @Version
- *
  */
 public abstract class Shape {
-	Color color;
+    Color color;
 
-	public void setColor(Color color) {
-		this.color = color;
-	}
-	
-	public Shape(Color color) {
-		super();
-		this.color = color;
-	}
+    public void setColor(Color color) {
+        this.color = color;
+    }
 
-	public abstract void draw();
+    public Shape(Color color) {
+        super();
+        this.color = color;
+    }
+
+    public abstract void draw();
 }

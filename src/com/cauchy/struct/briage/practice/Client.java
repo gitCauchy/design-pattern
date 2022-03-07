@@ -1,17 +1,15 @@
 package com.cauchy.struct.briage.practice;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Client.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ²âÊÔÀà
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description æµ‹è¯•ç±»
  * @Version
- *
  */
 public class Client {
-	public static void main(String[] args) {
-		Shape square = new Square(new White());
-		square.draw();
-	}
+    public static void main(String[] args) {
+        Shape square = new Square(new White());
+        square.draw();
+    }
 }

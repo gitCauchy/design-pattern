@@ -1,16 +1,15 @@
 package com.cauchy.struct.briage;
+
 /**
- * 
  * @author Cauchy
  * @ClassName WarmGift.java
- * @Date 2019Äê12ÔÂ1ÈÕ
+ * @Date 2019å¹´12æœˆ1æ—¥
  * @Description TODO
- * @Version 
- *
+ * @Version
  */
-public class WarmGift extends Gift{
-	
-	public WarmGift(GiftImpl impl) {
-		this.impl = impl;
-	}
+public class WarmGift extends Gift {
+
+    public WarmGift(GiftImpl impl) {
+        this.impl = impl;
+    }
 }

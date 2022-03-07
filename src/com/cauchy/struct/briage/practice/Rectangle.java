@@ -1,25 +1,26 @@
 package com.cauchy.struct.briage.practice;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Rectangle.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ³¤·½ÐÎ
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description é•¿æ–¹å½¢
+ * @Version
  */
 public class Rectangle extends Shape {
 
-	public Rectangle(Color color) {
-		super(color);
-	}
+    public Rectangle(Color color) {
+        super(color);
+    }
 
-	public void draw() {
-		color.print(this);
-	}
+    @Override
+    public void draw() {
+        color.print(this);
+    }
 
-	public String toString() {
-		return "Rectangle";
-	}
-	
+    @Override
+    public String toString() {
+        return "Rectangle";
+    }
+
 }

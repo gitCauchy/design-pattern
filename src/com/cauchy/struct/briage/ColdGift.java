@@ -1,16 +1,15 @@
 package com.cauchy.struct.briage;
+
 /**
- * 
  * @author Cauchy
  * @ClassName ColdGift.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description 
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description
+ * @Version
  */
-public class ColdGift extends Gift{
-	
-	public ColdGift(GiftImpl impl) {
-		this.impl = impl;
-	}
+public class ColdGift extends Gift {
+
+    public ColdGift(GiftImpl impl) {
+        this.impl = impl;
+    }
 }

@@ -1,26 +1,27 @@
 package com.cauchy.struct.briage.practice;
+
 /**
- * 
  * @author Cauchy
  * @ClassName Square.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description Õý·½ÐÎ
- * @Version 
- *
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description æ­£æ–¹å½¢
+ * @Version
  */
 public class Square extends Shape {
 
-	public Square(Color color) {
-		super(color);
-	}
+    public Square(Color color) {
+        super(color);
+    }
 
-	public void draw() {
-		color.print(this);
-	}
+    @Override
+    public void draw() {
+        color.print(this);
+    }
 
-	public String toString() {
-		return "Square";
-	}
-	
-	
+    @Override
+    public String toString() {
+        return "Square";
+    }
+
+
 }

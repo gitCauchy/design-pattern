@@ -3,8 +3,8 @@ package com.cauchy.struct.briage;
  * 
  * @author Cauchy
  * @ClassName Book.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description Êé±¾Àà
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description ä¹¦æœ¬ç±»
  * @Version 
  *
  */
