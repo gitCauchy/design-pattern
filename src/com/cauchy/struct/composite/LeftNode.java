@@ -1,23 +1,23 @@
 package com.cauchy.struct.composite;
+
 /**
- * 
  * @author Cauchy
  * @ClassName LeftNode.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Ò¶×Ó½Úµã
- * @Version 
- *
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å¶å­èŠ‚ç‚¹
+ * @Version
  */
 public class LeftNode extends Node {
-	String content;
-	
-	public LeftNode(String content) {
-		super();
-		this.content = content;
-	}
+    String content;
 
-	public void printName() {
-		System.out.println(content);
-	}
+    public LeftNode(String content) {
+        super();
+        this.content = content;
+    }
+
+    @Override
+    public void printName() {
+        System.out.println(content);
+    }
 
 }

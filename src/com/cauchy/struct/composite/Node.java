@@ -1,15 +1,13 @@
 package com.cauchy.struct.composite;
 
 /**
- * 
  * @author Cauchy
  * @ClassName Node.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ½Úµã³éÏóÀà
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description èŠ‚ç‚¹æŠ½è±¡ç±»
  * @Version
- *
  */
 public abstract class Node {
 
-	abstract public void printName();
+    abstract public void printName();
 }
