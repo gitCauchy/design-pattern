@@ -17,7 +17,6 @@ public class BranchNode extends Node {
     List<Node> nodes = new ArrayList<>();
 
     public BranchNode(String name) {
-        super();
         this.name = name;
     }
 
