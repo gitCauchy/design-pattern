@@ -3,8 +3,8 @@ package com.cauchy.struct.decorator;
 /**
  * @author Cauchy
  * @ClassName RedDecorator.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ºìÉ«×°ÊÎÆ÷
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description çº¢è‰²è£…é¥°å™¨
  * @Version
  */
 public class RedDecorator extends Decorator {
@@ -14,14 +14,14 @@ public class RedDecorator extends Decorator {
     }
 
     public void descA() {
-        System.out.println("±»×°ÊÎÆ÷À©Õ¹ĞŞÊÎ");
+        System.out.println("è¢«è£…é¥°å™¨æ‰©å±•ä¿®é¥°");
     }
 
     @Override
     public void desc() {
-        System.out.println("×°ÊÎ³ÉÎªºìÉ«µÄ");
+        System.out.println("è£…é¥°æˆä¸ºçº¢è‰²çš„");
         super.desc();
-        System.out.println("×°ÊÎÆ÷×°ÊÎ½áÊø");
+        System.out.println("è£…é¥°å™¨è£…é¥°ç»“æŸ");
     }
 
 }

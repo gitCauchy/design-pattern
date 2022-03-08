@@ -3,14 +3,14 @@ package com.cauchy.struct.decorator;
 /**
  * @author Cauchy
  * @ClassName ConcreteApple.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description Êµ¼ÊµÄÆ»¹û
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description å®žé™…çš„è‹¹æžœ
  * @Version
  */
 public class ConcreteApple implements Apple {
     @Override
     public void desc() {
-        System.out.println("ÆÕÍ¨µÄÆ»¹û");
+        System.out.println("æ™®é€šçš„è‹¹æžœ");
     }
 
 }

@@ -3,8 +3,8 @@ package com.cauchy.struct.decorator;
 /**
  * @author Cauchy
  * @ClassName Apple.java
- * @Date 2019Äê11ÔÂ30ÈÕ
- * @Description ±»×°ÊÎ¶ÔÏó
+ * @Date 2019å¹´11æœˆ30æ—¥
+ * @Description è¢«è£…é¥°å¯¹è±¡
  * @Version
  */
 public interface Apple {
