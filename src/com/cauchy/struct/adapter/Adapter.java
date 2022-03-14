@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 /**
  * @author Cauchy
  * @ClassName Adapter.java
- * @Date 2019Äê12ÔÂ1ÈÕ
- * @Description ÊÊÅäÆ÷Ä£Ê½£¬µ±Ò»¸öÀà²»ÄÜÖ±½Ó·ÃÎÊÁíÒ»¸öÀà£¬ĞèÒªÌí¼ÓÒ»¸ö×ª»»Æ÷À´´ïµ½Ä¿µÄ¡£
+ * @Date 2019å¹´12æœˆ1æ—¥
+ * @Description é€‚é…å™¨æ¨¡å¼ï¼Œå½“ä¸€ä¸ªç±»ä¸èƒ½ç›´æ¥è®¿é—®å¦ä¸€ä¸ªç±»ï¼Œéœ€è¦æ·»åŠ ä¸€ä¸ªè½¬æ¢å™¨æ¥è¾¾åˆ°ç›®çš„ã€‚
  * @Version
  */
 public class Adapter {
